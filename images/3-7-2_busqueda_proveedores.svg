@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg3700"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="3-7-2_busqueda_proveedores.eps">
+  <defs
+     id="defs3702">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3708" />
+    <inkscape:perspective
+       id="perspective3509"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4750"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4894"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="536.61687"
+     inkscape:cy="437.82856"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="730"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3705">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="2.0764465"
+       y="9.943779"
+       id="text2886"><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="9.943779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan6559">&lt;soap:Envelope <tspan
+   style="fill:#ff00ff"
+   id="tspan3389">xmlns:soap</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3391">&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="22.443779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3033">   &lt;soap:Body&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="34.943779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3035">      &lt;businessList <tspan
+   style="fill:#ff00ff"
+   id="tspan3393">xmlns:ns10</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3395">&quot;urn:uddi-org:policy_v3_instanceParms&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="47.443779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3397"><tspan
+   style="fill:#ff00ff"
+   id="tspan3409">         xmlns:ns9</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3441">&quot;urn:uddi-org:vs_v3&quot;</tspan><tspan
+   style="fill:#ff00ff"
+   id="tspan3443"> xmlns:ns8</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3445">&quot;urn:uddi-org:repl_v3&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="59.943779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3399"><tspan
+   style="fill:#ff00ff"
+   id="tspan3411">         xmlns:ns7</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3435">&quot;urn:uddi-org:subr_v3&quot;</tspan><tspan
+   style="fill:#ff00ff"
+   id="tspan3437"> xmlns:ns6</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3439">&quot;urn:uddi-org:sub_v3&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="72.443779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3401"><tspan
+   style="fill:#ff00ff"
+   id="tspan3413">         xmlns:ns5</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3427">&quot;urn:uddi-org:policy_v3&quot;</tspan><tspan
+   style="fill:#ff00ff"
+   id="tspan3429"> xmlns:ns4</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3431">&quot;urn:uddi-org:custody_v3&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="84.943779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3405"><tspan
+   style="fill:#ff00ff"
+   id="tspan3415">         xmlns:ns3</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3425">&quot;urn:uddi-org:vscache_v3&quot; </tspan><tspan
+   style="fill:#ff00ff"
+   id="tspan3417">xmlns:ns2</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3423">&quot;http://www.w3.org/2000/09/xmldsig#&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="97.443779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3407"><tspan
+   style="fill:#ff00ff"
+   id="tspan3419">         xmlns</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3421">&quot;urn:uddi-org:api_v3&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="109.94378"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3037">         &lt;listDescription&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="122.44378"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3039">            &lt;includeCount&gt;<tspan
+   style="fill:#000000"
+   id="tspan3447">2</tspan>&lt;/includeCount&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="134.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3041">            &lt;actualCount&gt;<tspan
+   style="fill:#000000"
+   id="tspan3449">2</tspan>&lt;/actualCount&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="147.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3043">            &lt;listHead&gt;<tspan
+   style="fill:#000000"
+   id="tspan3451">1</tspan>&lt;/listHead&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="159.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3045">         &lt;/listDescription&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="172.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3047">         &lt;businessInfos&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="184.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3049">            &lt;businessInfo <tspan
+   style="fill:#ff00ff"
+   id="tspan3453">businessKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3457">&quot;uddi:juddi.apache.org:businesses-asf&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="197.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3051">               &lt;name <tspan
+   style="fill:#ff00ff"
+   id="tspan3455">xml:lang</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3459">&quot;en&quot;</tspan>&gt;<tspan
+   style="fill:#000000"
+   id="tspan3461">An Apache jUDDI Node</tspan>&lt;/name&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="209.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3053">               &lt;description <tspan
+   style="fill:#ff00ff"
+   id="tspan3465">xml:lang</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3467">&quot;en&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="222.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3567">                  This is a UDDI v3 registry node as implemented by Apache jUDDI.</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="234.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3571">               &lt;/description&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="247.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3055">               &lt;serviceInfos&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="259.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3057">                  &lt;serviceInfo <tspan
+   style="fill:#ff00ff"
+   id="tspan3469">businessKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3471">&quot;uddi:juddi.apache.org:businesses-asf&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="272.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3573"><tspan
+   style="fill:#ff00ff"
+   id="tspan3575">                     serviceKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3577">&quot;uddi:juddi.apache.org:services-publisher&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="284.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3059">                     &lt;name <tspan
+   style="fill:#ff00ff"
+   id="tspan3545">xml:lang</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3547">&quot;en&quot;</tspan>&gt;<tspan
+   style="fill:#000000"
+   id="tspan3549">jUDDI Publisher Service</tspan>&lt;/name&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="297.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3061">                  &lt;/serviceInfo&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="309.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3063">                  &lt;serviceInfo <tspan
+   style="fill:#ff00ff"
+   id="tspan3543">businessKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3551">&quot;uddi:juddi.apache.org:businesses-asf&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="322.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3579"><tspan
+   style="fill:#ff00ff"
+   id="tspan3581">                     serviceKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3583">&quot;uddi:juddi.apache.org:services-custodytransfer&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="334.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3589">                     &lt;name <tspan
+   style="fill:#ff00ff"
+   id="tspan3541">xml:lang</tspan>=&quot;en&quot;&gt;<tspan
+   id="tspan3719"
+   style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold">UDDI Custody and Ownership Transfer Service</tspan>&lt;/name&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="347.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3067">                  &lt;/serviceInfo&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="359.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3069">                  &lt;serviceInfo <tspan
+   style="fill:#ff00ff"
+   id="tspan3539">businessKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3561">&quot;uddi:juddi.apache.org:businesses-asf&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="372.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3591"><tspan
+   style="fill:#ff00ff"
+   id="tspan3593">                     serviceKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3517">&quot;uddi:juddi.apache.org:services-inquiry&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="384.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3071">                     &lt;name <tspan
+   style="fill:#ff00ff"
+   id="tspan3537">xml:lang</tspan>=&quot;en&quot;&gt;<tspan
+   style="fill:#000000"
+   id="tspan3563">UDDI Inquiry Service</tspan>&lt;/name&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="397.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3073">                  &lt;/serviceInfo&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="409.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3075">                  &lt;serviceInfo <tspan
+   style="fill:#ff00ff"
+   id="tspan3535">businessKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3559">&quot;uddi:juddi.apache.org:businesses-asf&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="422.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3596"><tspan
+   style="fill:#ff00ff"
+   id="tspan3598">                     serviceKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3515">&quot;uddi:juddi.apache.org:services-publish&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="434.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3077">                     &lt;name <tspan
+   style="fill:#ff00ff"
+   id="tspan3533">xml:lang</tspan>=&quot;en&quot;&gt;<tspan
+   style="fill:#000000"
+   id="tspan3565">UDDI Publish Service</tspan>&lt;/name&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="447.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3079">                  &lt;/serviceInfo&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="459.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3081">                  &lt;serviceInfo <tspan
+   style="fill:#ff00ff"
+   id="tspan3531">businessKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3557">&quot;uddi:juddi.apache.org:businesses-asf&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="472.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3601"><tspan
+   style="fill:#ff00ff"
+   id="tspan3603">                     serviceKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3513">&quot;uddi:juddi.apache.org:services-security&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="484.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3083">                     &lt;name <tspan
+   style="fill:#ff00ff"
+   id="tspan3527">xml:lang</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3529">&quot;en&quot;</tspan>&gt;<tspan
+   style="fill:#000000"
+   id="tspan3555">UDDI Security Service</tspan>&lt;/name&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="497.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3085">                  &lt;/serviceInfo&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="509.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3087">                  &lt;serviceInfo <tspan
+   style="fill:#ff00ff"
+   id="tspan3525">businessKey</tspan>=&quot;uddi:juddi.apache.org:businesses-asf&quot; </tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="522.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3606"><tspan
+   style="fill:#ff00ff"
+   id="tspan3608">                     serviceKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3511">&quot;uddi:juddi.apache.org:services-subscriptionlistener&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="534.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3089">                     &lt;name <tspan
+   style="fill:#ff00ff"
+   id="tspan3523">xml:lang</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3521">&quot;en&quot;</tspan>&gt;<tspan
+   style="fill:#000000"
+   id="tspan3519">UDDI Subscription Listener Service</tspan>&lt;/name&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="547.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3091">                  &lt;/serviceInfo&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="559.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3093">                  &lt;serviceInfo <tspan
+   style="fill:#ff00ff"
+   id="tspan3495">businessKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3497">&quot;uddi:juddi.apache.org:businesses-asf&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="572.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3611"><tspan
+   style="fill:#ff00ff"
+   id="tspan3613">                     serviceKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3501">&quot;uddi:juddi.apache.org:services-subscription&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="584.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3095">                     &lt;name <tspan
+   style="fill:#ff00ff"
+   id="tspan3489">xml:lang</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3491">&quot;en&quot;</tspan>&gt;<tspan
+   style="fill:#000000"
+   id="tspan3493">UDDI Subscription Service</tspan>&lt;/name&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="597.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3097">                  &lt;/serviceInfo&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="609.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3099">               &lt;/serviceInfos&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="622.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3101">            &lt;/businessInfo&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="634.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3103">            &lt;businessInfo <tspan
+   style="fill:#ff00ff"
+   id="tspan3485">businessKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3487">&quot;uddi:juddi.apache.org:e3a9b6f7-3b05-4b1f-9dab-098ec93f26c2&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="647.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3105">               &lt;name&gt;UPNA&lt;/name&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="659.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3107">               &lt;description&gt;<tspan
+   style="fill:#000000"
+   id="tspan3473">Universidad Pública de Navarra</tspan>&lt;/description&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="672.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3109">               &lt;serviceInfos&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="684.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3111">                  &lt;serviceInfo <tspan
+   style="fill:#ff00ff"
+   id="tspan3475">businessKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3477">&quot;uddi:juddi.apache.org:e3a9b6f7-3b05-4b1f-9dab-098ec93f26c2&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="697.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3616"><tspan
+   style="fill:#ff00ff"
+   id="tspan3618">                     serviceKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan3481">&quot;uddi:juddi.apache.org:8c1c6aa2-50d7-4858-ab6d-ed5813865c14&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="709.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3113">                     &lt;name&gt;<tspan
+   style="fill:#000000"
+   id="tspan3483">Web Service para la consulta de tiempo meteorológico</tspan>&lt;/name&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="722.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3115">                  &lt;/serviceInfo&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="734.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3117">               &lt;/serviceInfos&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="747.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3119">            &lt;/businessInfo&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="759.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3121">         &lt;/businessInfos&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="772.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3123">      &lt;/businessList&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="784.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3125">   &lt;/soap:Body&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="797.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3102">&lt;/soap:Envelope&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="809.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3023" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="108"
+       y="343.36218"
+       id="text7912"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7914"
+         x="108"
+         y="343.36218"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#0000ff;font-family:Monospace;-inkscape-font-specification:Monospace" /></text>
+  </g>
+</svg>

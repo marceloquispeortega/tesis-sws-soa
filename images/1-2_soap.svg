@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2995"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="1-2_soap.svg">
+  <defs
+     id="defs2997">
+    <linearGradient
+       id="linearGradient3791"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#999999;stop-opacity:1;"
+         offset="0"
+         id="stop3793" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.31"
+     inkscape:cx="243.49226"
+     inkscape:cy="911.91877"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="730"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3000">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#939dac;fill-opacity:1;stroke:#1c1f24;stroke-width:1.99907351000000010;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3021"
+       width="502.00092"
+       height="21.357027"
+       x="9.1328058"
+       y="8.0814829"
+       ry="10.678514"
+       rx="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="20.610685"
+       y="24.117908"
+       id="text5231"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="20.610685"
+         y="24.117908"
+         id="tspan5239"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book">&lt;?xml version=&quot;1.0&quot;?&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="20.610685"
+         y="41.617908"
+         id="tspan5237" /></text>
+    <rect
+       style="fill:#b7bec8;fill-opacity:1;stroke:#1c1f24;stroke-width:2.00505376000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3021-9"
+       width="501.99493"
+       height="215.56361"
+       x="9.0532465"
+       y="33.683136"
+       ry="107.78181"
+       rx="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New"
+       x="20.610683"
+       y="48.072102"
+       id="text5245"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="20.610683"
+         y="48.072102"
+         id="tspan5249"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book">&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="20.610683"
+         y="65.572098"
+         id="tspan5275"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book" /><tspan
+         sodipodi:role="line"
+         x="20.610683"
+         y="83.072098"
+         id="tspan5277"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book" /><tspan
+         sodipodi:role="line"
+         x="20.610683"
+         y="100.5721"
+         id="tspan5279"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book" /><tspan
+         sodipodi:role="line"
+         x="20.610683"
+         y="118.0721"
+         id="tspan5281"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book" /><tspan
+         sodipodi:role="line"
+         x="20.610683"
+         y="135.5721"
+         id="tspan5283"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book" /><tspan
+         sodipodi:role="line"
+         x="20.610683"
+         y="153.0721"
+         id="tspan5285"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book" /><tspan
+         sodipodi:role="line"
+         x="20.610683"
+         y="170.5721"
+         id="tspan5287"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book" /><tspan
+         sodipodi:role="line"
+         x="20.610683"
+         y="188.0721"
+         id="tspan5289"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book" /><tspan
+         sodipodi:role="line"
+         x="20.610683"
+         y="205.5721"
+         id="tspan5291"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book" /><tspan
+         sodipodi:role="line"
+         x="20.610683"
+         y="223.0721"
+         id="tspan5293"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book" /><tspan
+         sodipodi:role="line"
+         x="20.610683"
+         y="240.5721"
+         id="tspan5295"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book">&lt;/soap:Envelope&gt;</tspan></text>
+    <rect
+       style="opacity:0;fill:#cbcbcb;fill-opacity:1;stroke:#1217da;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.93513513;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect5315"
+       width="445.03818"
+       height="77.099236"
+       x="35.877861"
+       y="58.469051"
+       ry="38.549618" />
+    <rect
+       style="fill:#dbdee3;fill-opacity:1;stroke:#6f7c91;stroke-width:2.04149579999999990;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect5317"
+       width="448.81375"
+       height="82.972"
+       x="37.72456"
+       y="60.392548"
+       transform="matrix(1,0,-0.01792434,0.99983935,0,0)" />
+    <rect
+       style="fill:#dbdee3;fill-opacity:1;stroke:#6f7c91;stroke-width:1.86581325999999990;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect5317-0"
+       width="448.85495"
+       height="69.299637"
+       x="38.35318"
+       y="151.81534"
+       transform="matrix(1,0,-0.02146266,0.99976965,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="43.426533"
+       y="165.71085"
+       id="text5265"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5267"
+         x="43.426533"
+         y="165.71085"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book">&lt;soap:Body&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="43.426533"
+         y="181.96085"
+         id="tspan5269"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book">        &lt;!--Message goes here. --&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="43.426533"
+         y="198.21085"
+         id="tspan5271"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book">        Please pick up some milk on your way home from work.</tspan><tspan
+         sodipodi:role="line"
+         x="43.426533"
+         y="214.46085"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book"
+         id="tspan5273">&lt;/soap:Body&gt;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="42.601166"
+       y="73.439827"
+       id="text5253"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5255"
+         x="42.601166"
+         y="73.439827"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book">&lt;soap:Header&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="42.601166"
+         y="89.689827"
+         id="tspan5257"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book">        &lt;!--Optional header information goes here. --&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="42.601166"
+         y="105.93983"
+         id="tspan5259"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book">        &lt;To&gt;Scott&lt;/To&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="42.601166"
+         y="122.18983"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book"
+         id="tspan5261">        &lt;From&gt;Suzanne&lt;/From&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="42.601166"
+         y="138.43982"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Franklin Gothic Book;-inkscape-font-specification:Franklin Gothic Book"
+         id="tspan5263">&lt;/soap:Header&gt;</tspan></text>
+  </g>
+</svg>

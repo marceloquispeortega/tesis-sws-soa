@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg3700"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="3-6-2_publicar_servicio.eps">
+  <defs
+     id="defs3702">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3708" />
+    <inkscape:perspective
+       id="perspective3509"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4750"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4894"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.23"
+     inkscape:cx="313.37747"
+     inkscape:cy="803.43832"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="730"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3705">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="2.0764465"
+       y="9.943779"
+       id="text2886"><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="9.943779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8859">&lt;soap:Envelope <tspan
+   style="fill:#ff00ff"
+   id="tspan10124">xmlns:soap</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10128">&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="22.443779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8861">   &lt;soap:Body&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="34.943779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10140">      &lt;serviceDetail <tspan
+   style="fill:#ff00ff"
+   id="tspan10130">xmlns:ns10</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10132">&quot;urn:uddi-org:vs_v3&quot; </tspan><tspan
+   style="fill:#ff00ff"
+   id="tspan10142">xmlns:ns9</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10136">&quot;urn:uddi-org:policy_v3_instanceParms&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="47.443779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10184"><tspan
+   style="fill:#ff00ff"
+   id="tspan10148">                     xmlns:ns8</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10150">&quot;urn:uddi-org:subr_v3&quot; </tspan><tspan
+   style="fill:#ff00ff"
+   id="tspan10186">xmlns:ns7</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10154">&quot;urn:uddi-org:policy_v3&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="59.943779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10190"><tspan
+   style="fill:#ff00ff"
+   id="tspan10164">                     xmlns:ns6</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10158">&quot;urn:uddi-org:sub_v3&quot; </tspan><tspan
+   style="fill:#ff00ff"
+   id="tspan10192">xmlns:ns5</tspan>=<tspan
+   id="tspan10176"
+   style="fill:#800080">&quot;urn:uddi-org:custody_v3&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="72.443779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10178"><tspan
+   style="fill:#ff00ff"
+   id="tspan10199">                     xmlns:ns4</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10174">&quot;urn:uddi-org:repl_v3&quot; </tspan><tspan
+   style="fill:#ff00ff"
+   id="tspan10202">xmlns:ns3</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10212">&quot;urn:uddi-org:vscache_v3&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="84.943779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10180"><tspan
+   style="fill:#ff00ff"
+   id="tspan10204">                     xmlns:ns2</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10210">&quot;http://www.w3.org/2000/09/xmldsig#&quot; </tspan><tspan
+   style="fill:#ff00ff"
+   id="tspan10206">xmlns</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10208">&quot;urn:uddi-org:api_v3&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="97.443779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8865">         &lt;businessService </tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="109.94378"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10224"><tspan
+   style="fill:#ff00ff"
+   id="tspan10226">            businessKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10216">&quot;uddi:juddi.apache.org:e3a9b6f7-3b05-4b1f-9dab-098ec93f26c2&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="122.44378"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10218"><tspan
+   style="fill:#ff00ff"
+   id="tspan10220">            serviceKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10222">&quot;uddi:juddi.apache.org:8c1c6aa2-50d7-4858-ab6d-ed5813865c14&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="134.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8867">            &lt;name&gt;<tspan
+   style="fill:#000000"
+   id="tspan10229">Web Service para la consulta de tiempo meteorológico</tspan>&lt;/name&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="147.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8869">            &lt;description&gt;<tspan
+   style="fill:#000000"
+   id="tspan10231">Dada una localidad valida, podemos obtener su nivel de viento, </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="159.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8871"><tspan
+   style="fill:#000000"
+   id="tspan10233">        visibilidad, temperatura, humedad, presión atmosférica, etc.</tspan>&lt;/description&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="172.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8873">            &lt;bindingTemplates&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="184.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8875">               &lt;bindingTemplate </tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="197.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10255"><tspan
+   style="fill:#ff00ff"
+   id="tspan10257">                  bindingKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10241">&quot;uddi:juddi.apache.org:40486ee0-9936-47ee-8101-2ff6407c838c&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="209.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8877">                  &lt;accessPoint <tspan
+   style="fill:#ff00ff"
+   id="tspan10237">useType</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10243">&quot;http&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="222.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10260">                    http://www.webservicex.net/globalweather.asmx</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="234.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10264">                  &lt;/accessPoint&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="247.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8879">                  &lt;tModelInstanceDetails&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="259.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8881">                     &lt;tModelInstanceInfo </tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="272.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10247"><tspan
+   style="fill:#ff00ff"
+   id="tspan10249">                        tModelKey</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan10251">&quot;uddi:juddi.apache.org:778bc7f3-5603-4c10-a8d0-5f6f6750c8c4&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="284.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8883">                        &lt;instanceDetails&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="297.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8885">                           &lt;overviewDoc&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="309.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8887">                              &lt;overviewURL&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="322.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10266">                                http://www.webservicex.net/globalweather.asmx?wsdl</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="334.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan10270">                              &lt;/overviewURL&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="347.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8889">                           &lt;/overviewDoc&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="359.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8891">                        &lt;/instanceDetails&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="372.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8893">                     &lt;/tModelInstanceInfo&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="384.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8895">                  &lt;/tModelInstanceDetails&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="397.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8897">               &lt;/bindingTemplate&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="409.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8899">            &lt;/bindingTemplates&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="422.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8901">         &lt;/businessService&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="434.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8903">      &lt;/serviceDetail&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="447.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8905">   &lt;/soap:Body&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="459.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan8907">&lt;/soap:Envelope&gt;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="108"
+       y="343.36218"
+       id="text7912"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7914"
+         x="108"
+         y="343.36218"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#0000ff;font-family:Monospace;-inkscape-font-specification:Monospace" /></text>
+  </g>
+</svg>

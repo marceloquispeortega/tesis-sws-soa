@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg3700"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="3-8-1_detalle_servicio.svg">
+  <defs
+     id="defs3702">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3708" />
+    <inkscape:perspective
+       id="perspective3509"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4750"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4894"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="536.61687"
+     inkscape:cy="805.32856"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="730"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3705">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="2.0764465"
+       y="9.943779"
+       id="text2886"><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="9.943779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3726">&lt;soapenv:Envelope </tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="22.443779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan9037"><tspan
+   style="fill:#ff00ff"
+   id="tspan9049">   xmlns:soapenv</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan9051">&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="34.943779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan9039"><tspan
+   style="fill:#ff00ff"
+   id="tspan9053">   xmlns:urn</tspan>=<tspan
+   style="fill:#800080"
+   id="tspan9055">&quot;urn:uddi-org:api_v3&quot;</tspan>&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="47.443779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3728">   &lt;soapenv:Header/&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="59.943779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3730">   &lt;soapenv:Body&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="72.443779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3732">      &lt;urn:get_serviceDetail&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="84.943779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3736">         &lt;urn:serviceKey&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="97.443779"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan9045">            uddi:juddi.apache.org:8c1c6aa2-50d7-4858-ab6d-ed5813865c14</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="109.94378"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan9047">         &lt;/urn:serviceKey&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="122.44378"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3738">      &lt;/urn:get_serviceDetail&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="134.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3740">   &lt;/soapenv:Body&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="147.44379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3742">&lt;/soapenv:Envelope&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="2.0764465"
+         y="159.94379"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#0000ff;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+         id="tspan3023" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="108"
+       y="343.36218"
+       id="text7912"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7914"
+         x="108"
+         y="343.36218"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#0000ff;font-family:Monospace;-inkscape-font-specification:Monospace" /></text>
+  </g>
+</svg>
