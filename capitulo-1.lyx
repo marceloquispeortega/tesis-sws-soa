@@ -1,0 +1,3479 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrbook
+\begin_preamble
+% increase link area for cross-references and autoname them
+\AtBeginDocument{\renewcommand{\ref}[1]{\mbox{\autoref{#1}}}}
+\newlength{\abc}
+\settowidth{\abc}{\space}
+\AtBeginDocument{%
+\addto\extrasenglish{
+ \renewcommand{\equationautorefname}{\hspace{-\abc}}
+ \renewcommand{\sectionautorefname}{sec.\negthinspace}
+ \renewcommand{\subsectionautorefname}{sec.\negthinspace}
+ \renewcommand{\subsubsectionautorefname}{sec.\negthinspace}
+ \renewcommand{\figureautorefname}{Fig.\negthinspace}
+ \renewcommand{\tableautorefname}{Tab.\negthinspace}
+}
+}
+
+% in case somebody want to have the label "Gleichung"
+%\renewcommand{\eqref}[1]{Gleichung~(\negthinspace\autoref{#1})}
+
+% put the link to figure floats to the beginning
+% of the figure and not to its end
+\usepackage[figure]{hypcap}
+
+% the pages of the TOC is numbered roman
+% and a pdf-bookmark for the TOC is added
+\let\myTOC\tableofcontents
+\renewcommand\tableofcontents{%
+  \frontmatter
+  \pdfbookmark[1]{\contentsname}{}
+  \myTOC
+  \mainmatter }
+
+% make caption labels bold
+\setkomafont{captionlabel}{\bfseries}
+\setcapindent{1em}
+
+% enable calculations
+\usepackage{calc}
+
+% fancy page header/footer settings
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+
+% increase the bottom float placement fraction
+\renewcommand{\bottomfraction}{0.5}
+
+% avoid that floats are placed above its sections
+\let\mySection\section\renewcommand{\section}{\suppressfloats[t]\mySection}
+\end_preamble
+\options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage,fleqn
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans lmss
+\font_typewriter lmtt
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_title "Implementación de Servicios Web Semánticos para Arquitecturas SOA"
+\pdf_author "Lucio Marcelo Quispe"
+\pdf_subject "Tesis para la obtención del grado de Máster en Tecnologías Informáticas"
+\pdf_keywords "Servicios Web, Arquitectura SOA, Web Semántica, SOAP, REST, Ontologías"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_numerical
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch NoChildDocument
+\selected 0
+\filename_suffix 0
+\color #ff0000
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rightmark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptername
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thechapter
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+leftmark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Enable page headers and add the chapter to the header line.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Footer
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+
+\end_layout
+
+\begin_layout Chapter
+Introducción
+\end_layout
+
+\begin_layout Section
+Antecedentes
+\end_layout
+
+\begin_layout Standard
+La Arquitectura Orientada a Servicios, SOA por sus siglas, es un concepto
+ que tuvo sus inicios a mediados de los 80s con la llegada al mercado de
+ la computación distribuida y las llamadas a procedimientos remotos.
+ Sin embargo, fue recién Gartner Inc en 1996 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "schulte96"
+
+\end_inset
+
+, que describe por primera vez SOA en sus artículos 
+\shape italic
+“Service Oriented” Architectures, Part 1
+\shape default
+ y 
+\shape italic
+“Service Oriented” Architectures, Part 2
+\shape default
+.
+ Y es sólo, hasta el 2003 que SOA entra por completo en el mundo de las
+ TI empresariales, a través de los Servicios Web 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "schulte02"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En la actualidad, SOA se considera, al contrario qué las Arquitecturas Orientada
+s a Objetos, como un concepto que permite desarrollar software bajo un marco
+ de diseño para la integración y composición de aplicaciones independientes,
+ mejor conocidas como servicios.
+ Al estar dispersas en la red, permiten obtener interoperabilidad entre
+ aplicaciones propias y las desarrolladas por terceros.
+\end_layout
+
+\begin_layout Standard
+Además de la composición, SOA cumple con otras funciones como la publicación,
+ el descubrimiento, y la monitorización de servicios.
+ Sin embargo, en muchas ocasiones estas tareas se realizan de forma manual
+ y con información muy general.
+ Por lo que es necesario disponer de mecanismos que ayuden, a desarrolladores
+ de aplicaciones basadas en SOA, a que estas tareas se conviertan en procesos
+ semiautomáticos y con mayor información.
+\end_layout
+
+\begin_layout Standard
+Los servicios en SOA desde sus inicios se han venido desarrollando con el
+ estándar SOAP.
+ Sin embargo, en la actualidad los proveedores de servicios están migrando
+ sus implementaciones a servicios basados en REST, por razones que se detallan
+ en secciones posteriores.
+ Con lo que se hace también necesario considerar este tipo de servicios
+ a la hora de desarrollar aplicaciones basadas en SOA.
+\end_layout
+
+\begin_layout Standard
+En ese sentido, el presente trabajo de investigación intenta abordar el
+ problema desde la perspectiva de la Web Semántica.
+ Para esto, se realiza la descripción de servicios de forma semántica y
+ haciendo uso de estándares de modelos de ontologías, como lo es OWL-S,
+ que permitan a través de razonadores: descubrir, localizar y componer servicios
+ Web de forma semiautomática.
+\end_layout
+
+\begin_layout Standard
+En este trabajo se pretende además, considerar los servicios basados en
+ REST.
+ Para lo cual se añade al estándar OWL-S, que por defecto sólo soporta servicios
+ basados en SOAP, la definición y descripción de servicios basados en REST.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Standard
+Como objetivos del Trabajo de Fin de Máster se tienen:
+\end_layout
+
+\begin_layout Itemize
+Caracterizar los servicios Web de forma semántica, a partir de su descripción,
+ en conceptos y propiedades empleando el modelo de ontología OWL-S.
+\end_layout
+
+\begin_layout Itemize
+Modificar la estructura del estándar OWL-S, con objetos y propiedades referentes
+ a servicios basados en REST y a la composición de servicios.
+\end_layout
+
+\begin_layout Itemize
+Desarrollar un prototipo para la publicación semántica de servicios, que
+ permita obtener un registro de servicios almacenado en una ontología.
+\end_layout
+
+\begin_layout Itemize
+Desarrollo de un prototipo para el descubrimiento semántico de servicios,
+ que permita obtener información acerca de los servicios y las organizaciones
+ que publiquen dichos servicios.
+\end_layout
+
+\begin_layout Itemize
+Desarrollo de un prototipo de localización semántica de servicios, que brinde
+ apoyo al descubrimiento y descripción de servicios, a través de la localización
+ directa de las referencias del servicio.
+\end_layout
+
+\begin_layout Itemize
+Desarrollo de un prototipo de composición semántica de servicios, como apoyo
+ al problema de composición, convirtiendo a éste en un proceso semiautomático.
+\end_layout
+
+\begin_layout Section
+Revisión del Estado del Arte
+\end_layout
+
+\begin_layout Standard
+La temática del trabajo se aborda bajo cuatro pilares fundamentales: Arquitectur
+a Orientada a Servicios, Servicios Web, la Web Semántica y los Servicios
+ Web Semánticos.
+\end_layout
+
+\begin_layout Subsection
+Arquitectura Orientada a Servicios
+\end_layout
+
+\begin_layout Standard
+Existen muchas definiciones acerca de SOA, algunas más completas que otras,
+ pero la mayoría de los autores coinciden que es un concepto de diseño de
+ arquitectura que describe un sistema o software en términos de servicios
+ (considerados como componentes) y la relación entre éstos (denominada composici
+ón).
+ 
+\end_layout
+
+\begin_layout Standard
+Con SOA, los sistemas son altamente escalables ya que reflejan el negocio
+ de la organización y utilizan capacidades distribuidas bajo el control
+ de diferentes propietarios y dominios.
+ Lo que provee una forma bien definida de ofrecer, descubrir, interactuar
+ y usar dichas capacidades para producir los efectos deseados de manera
+ consistente y medible.
+\end_layout
+
+\begin_layout Standard
+Las ventajas de SOA son la reutilización, interoperabilidad, escalabilidad,
+ flexibilidad y eficiencia de coste, al reutilizar infraestructuras ya existente
+s.
+ Sugiere la creación de servicios flexibles, seguros, y lo más importante
+ de todo, con una arquitectura basada en estándares.
+  
+\end_layout
+
+\begin_layout Standard
+Por tanto, se puede afirmar que SOA no es una tecnología, ni un producto
+ que se pueda comprar e instalar, sino un conjunto de patrones, principios
+ y prácticas para construir piezas de software que puedan interoperar independie
+ntemente de la tecnología utilizada en su implementación.
+ 
+\end_layout
+
+\begin_layout Standard
+Las características principales de una arquitectura SOA son:
+\end_layout
+
+\begin_layout Itemize
+Está basada en estándares.
+\end_layout
+
+\begin_layout Itemize
+Los servicios son autónomos y granulares.
+\end_layout
+
+\begin_layout Itemize
+Y los proveedores y consumidores, débilmente acoplados.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Componentes de SOA
+\end_layout
+
+\begin_layout Standard
+SOA define un conjunto de capas de software asociadas a estándares y tecnologías
+ descritas en la Figura 1.1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/1-1_soa.eps
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Componentes de SOA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La capa inferior (
+\shape italic
+Transport
+\shape default
+) se refiere a la capa de transferencia de mensajes.
+ En ella se definen las URIs (
+\shape italic
+Uniform Resource Identifier
+\shape default
+), empleadas para la identificación de los recursos en la Web.
+ Donde además de HTTP, pueden emplearse otros protocolos como SMTP, FTP,
+ BEEP y JMS.
+\end_layout
+
+\begin_layout Standard
+La segunda capa (
+\shape italic
+Messaging
+\shape default
+) consiste en un protocolo de intercambio de mensajes; que bien puede ser
+ SOAP, basado en el intercambio de mensajes XML; o REST, basado en el intercambi
+o de mensajes (XML y JSON) con operaciones HTTP sin estado.
+ Ambas tecnologías son consideradas como dos estilos diferentes para implementar
+ servicios Web.
+ 
+\end_layout
+
+\begin_layout Standard
+En la capa siguiente (
+\shape italic
+Description
+\shape default
+) se describen los servicios Web bajo una interfaz pública, que define clarament
+e dos niveles: en el nivel más alto, las operaciones del servicio; y en
+ el más abstracto, la forma en cómo debe interaccionar con el protocolo
+ de mensajes.
+ Tiene formato XML, y dependiendo del protocolo, puede ser WSDL (
+\shape italic
+Web Services Description Language)
+\shape default
+ para SOAP y WADL (
+\shape italic
+Web Application Description Language
+\shape default
+) para REST.
+ 
+\end_layout
+
+\begin_layout Standard
+La cuarta capa (
+\shape italic
+Discovery
+\shape default
+) es el de la publicación de los servicios previamente definidos.
+ Para esto, se emplea el estándar UDDI (
+\shape italic
+Universal Description, Discovery and Integration
+\shape default
+), que ofrece la funcionalidad necesaria para el descubrimiento y registro
+ de los servicios ofrecidos por una determinada entidad.
+ El registro del catálogo se lo hace en formato XML y cuenta con tres partes:
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+White Pages
+\shape default
+, contiene la información del proveedor: nombre, dirección, etc.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Yellow Pages
+\shape default
+, categoriza los servicios en base a taxonomías.
+\end_layout
+
+\begin_layout Itemize
+Y 
+\shape italic
+Green Pages
+\shape default
+, brinda información técnica acerca de los servicios.
+ 
+\end_layout
+
+\begin_layout Standard
+De este modo, UDDI organiza de un modo jerárquico las compañías, sus servicios
+ y la información para acceder a los mismos.
+\end_layout
+
+\begin_layout Standard
+\noindent
+Y por último, la capa superior está orientada a la interacción entre servicios.
+ En ella se definen procesos de negocio, así como la orquestación de servicios
+ que consiste en la organización, coordinación y composición de servicios
+ Web.
+ En ésta se emplea el lenguaje de orquestación BPEL (
+\shape slanted
+Business Process Execution Language
+\shape default
+) para poder decidir el orden y el momento en el que los procesos (servicios
+ Web) deben ejecutarse.
+\end_layout
+
+\begin_layout Subsection
+Servicios Web
+\end_layout
+
+\begin_layout Standard
+OASIS (
+\shape italic
+Organization for the Advancement of Structured Information Standards
+\shape default
+) 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://www.oasis-open.org/
+\end_layout
+
+\end_inset
+
+ y W3C (
+\shape slanted
+World Wide Web Consortium
+\shape default
+) 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://www.w3.org/
+\end_layout
+
+\end_inset
+
+ son los responsables de definir la arquitectura y reglamentación de los
+ Servicios Web y fomentar su utilización.
+ Estas organizaciones deﬁnen a un Servicio Web como un componente de software
+ diseñado para soportar una interacción interoperable máquina a máquina
+ sobre una red.
+ Por lo que, los Servicios Web suelen ser considerados como APIs Web que
+ pueden ser accedidos dentro de una red (principalmente Internet) y ejecutados
+ en el sistema que los aloja.
+\end_layout
+
+\begin_layout Standard
+Entre las características de los Servicios Web, se pueden destacar las siguiente
+s: 
+\end_layout
+
+\begin_layout Itemize
+Proporcionan interoperabilidad, es decir, varias aplicaciones con propiedades
+ completamente diferentes, desarrolladas mediante lenguajes de programación
+ distintos e independientemente del fabricante y de la plataforma sobre
+ la cual se hayan instalado, pueden comunicarse en una red de ordenadores
+ mediante los servicios Web.
+ 
+\end_layout
+
+\begin_layout Itemize
+Superan las barreras geográficas, ofreciendo la posibilidad de integrar
+ servicios de compañías diferentes y distantes geográficamente.
+ 
+\end_layout
+
+\begin_layout Itemize
+Proporcionan una gran flexibilidad, de modo que el realizar cambios no supone
+ ninguna dificultad en las aplicaciones que utilizan servicios.
+ 
+\end_layout
+
+\begin_layout Itemize
+Se basan en el protocolo HTTP sobre TCP en el puerto 80.
+ Permiten además que la comunicación sea segura vía SSL sobre HTTPS.
+\end_layout
+
+\begin_layout Itemize
+Permiten a los programadores abstraer los procesos de negocio y centrarse
+ en el entorno de programación de los servicios Web.
+\end_layout
+
+\begin_layout Standard
+En cuanto al desarrollo de servicios Web, este alberga un amplio soporte
+ de tecnologías y estándares, pero el caso más común de uso, se refiere
+ a clientes y servidores que se comunican mediante mensajes XML y empleando
+ tradicionalmente el estándar SOAP.
+ Sin embargo, en los últimos años se ha ido popularizando el desarrollo
+ de servicios Web basados en REST.
+ Tecnología que ha supuesto por sus características, una nueva opción de
+ implementación de servicios Web.
+ Por lo que, en la actualidad proveedores de Web 2.0, como 
+\shape italic
+Facebook
+\shape default
+, 
+\shape italic
+Yahoo
+\shape default
+ y 
+\shape italic
+Google
+\shape default
+, ya la consideran para el desarrollo de sus servicios.
+ 
+\end_layout
+
+\begin_layout Standard
+Para tener una idea más clara, a continuación se describen ambas tecnologías
+ (SOAP y REST) y como primer aporte de este trabajo, se realiza una comparativa
+ entre las mismas.
+\end_layout
+
+\begin_layout Subsubsection
+SOAP (
+\shape italic
+Simple Object Access Protocol
+\shape default
+)
+\end_layout
+
+\begin_layout Standard
+SOAP es un protocolo estándar para el intercambio de datos XML entre dos
+ objetos.
+ Fue creado por Microsoft, IBM y otros, basándose en el protocolo XML-RPC.
+ Actualmente se encuentra en la versión 1.2 y está bajo el auspicio de la
+ W3C.
+ 
+\end_layout
+
+\begin_layout Standard
+SOAP se caracteriza principalmente por: 
+\end_layout
+
+\begin_layout Itemize
+Establecer un protocolo de invocación de servicios remotos, basado en el
+ protocolo estándar de Internet, HTTP, para la transmisión de mensajes.
+ Lo que garantiza que cualquier cliente con un navegador estándar pueda
+ conectarse con un servidor remoto.
+\end_layout
+
+\begin_layout Itemize
+Y emplear XML, para la codificación de datos.
+ Lo que permite además, bajo el estándar WSDL, describir el contenido del
+ mensaje, la forma en cómo podría ser procesado el servicio y la especificación
+ de algunas estructuras de datos.
+ 
+\end_layout
+
+\begin_layout Standard
+Estas características hacen que SOAP, en su implementación, sea basado en
+ estándares, independiente de la plataforma y del lenguaje de programación.
+\end_layout
+
+\begin_layout Standard
+Los mensajes en SOAP constan de 3 secciones, como se muestra en la Figura
+ 1.2, donde:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+envelope
+\series default
+\shape default
+ (envoltura): Es el elemento raíz del mensaje, contiene los elementos 
+\shape italic
+header
+\shape default
+ y 
+\shape italic
+body
+\shape default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+header
+\series default
+\shape default
+ (encabezado): Proporciona información auxiliar del contenido: remitente,
+ destinatario y todo lo que no es apropiado codificar en el cuerpo.
+ Por ejemplo, si el mensaje está comprimido, habría que indicar aquí el
+ algoritmo de compresión.
+ Además se puede emplear para añadir autenticación, información de seguridad,
+ información de enrutamiento e información de pago, entre otros.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+body
+\series default
+\shape default
+ (cuerpo): Contiene el mensaje en sí a transmitir.
+ Una convención para representar las llamadas y las respuestas a procedimientos
+ remotos.
+ No hay ninguna restricción, podría ser una simple cadena de caracteres,
+ un array de bytes codificado, o XML.
+ Lo importante es que no invalide el documento XML resultante.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/1-2_soap.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Anatomía de un mensaje SOAP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+REST (Representational State Transfer)
+\end_layout
+
+\begin_layout Standard
+REST es considerado como un estilo de arquitectura de software para sistemas
+ hipermedia distribuidos como servicios en la Web.
+ El término fue introducido en la tesis doctoral de Roy Fielding en el año
+ 2000 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fielding:2000:ASD:932295"
+
+\end_inset
+
+, como una colección de principios para el diseño de arquitecturas en red,
+ y ha pasado en la actualidad, a ser ampliamente utilizado por la comunidad
+ de desarrollo.
+ 
+\end_layout
+
+\begin_layout Standard
+Cabe destacar que a diferencia de SOAP, REST no es un estándar; es más bien
+ un estilo de arquitectura basado en estándares como HTTP, URL y XML.
+ No emplea WSDL, sino define WADL como lenguaje de descripción de servicios.
+ 
+\end_layout
+
+\begin_layout Standard
+Los sistemas que siguen los principios de REST son considerados como RESTful
+ y la gran ventaja de éstos, es que logran gran escalabilidad en la Web
+ siguiendo cuatro principios fundamentales de diseño 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rodriguez08"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Utiliza los métodos HTTP de manera explícita
+\series default
+\shape default
+: REST hace que los desarrolladores usen los métodos HTTP explícitamente
+ de manera que resulte consistente con la definición del protocolo.
+ Este principio de diseño básico establece una asociación uno-a-uno entre
+ las operaciones de crear, leer, actualizar y borrar (CRUD: 
+\shape italic
+Create
+\shape default
+, 
+\shape italic
+Read
+\shape default
+, 
+\shape italic
+Update
+\shape default
+ y 
+\shape italic
+Delete
+\shape default
+) y los métodos HTTP.
+ De acuerdo a esta asociación:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\shape italic
+POST
+\series default
+\shape default
+ para crear un recurso en el servidor, 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+GET
+\series default
+\shape default
+ para obtenerlo, 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+PUT
+\series default
+\shape default
+ para cambiar su estado o actualizarlo,
+\end_layout
+
+\begin_layout Itemize
+o 
+\series bold
+\shape italic
+DELETE
+\series default
+\shape default
+ para eliminarlo.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\shape italic
+No mantiene estado
+\series default
+\shape default
+: El cliente y servidor no mantienen ningún estado de las comunicaciones
+ entre mensajes.
+ En REST no se emplean 
+\shape italic
+cookies
+\shape default
+ ni otros mecanismos similares.
+ Los clientes envían peticiones completas e independientes; es decir, envían
+ peticiones que incluyen todos los datos necesarios para cumplir el pedido,
+ de manera que el servidor no tenga que recuperar ninguna información de
+ contexto o estado al procesar la petición.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Expone URIs con forma de directorios
+\series default
+\shape default
+: Desde el punto de vista del cliente de la aplicación que accede a un recurso,
+ la URI determina qué tan intuitivo va a ser el servicio Web, y si el servicio
+ va a ser utilizado tal como fue pensado en el momento de diseñarlo.
+ Por lo que, las URIs deben ser intuitivas, hasta el punto que sea fácil
+ adivinarlas.
+ Una forma de lograr este nivel de usabilidad es definir URIs con una estructura
+ al estilo de los directorios.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Transfiere XML, JSON, o ambos
+\series default
+\shape default
+: La representación de un recurso en general refleja el estado actual del
+ mismo y sus atributos en el momento en el que el cliente de la aplicación
+ realiza la petición.
+ Este principio tiene que ver con el formato de los datos que la aplicación
+ y el servicio intercambian en las peticiones y respuestas.
+ Aquí es donde realmente vale la pena mantener las cosas simples, legibles
+ por humanos y conectadas.
+ Por lo que, a diferencia de SOAP, REST además de XML permite transferir
+ JSON o ambos a la vez.
+ 
+\end_layout
+
+\begin_layout Standard
+Un concepto importante en REST es la existencia de recursos (elementos de
+ información) que son transferidos entre los consumidores y el proveedor.
+ Un recurso o su representación está estructurados bajo el esquema de la
+ Figura 1.3.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/1-3_http_rest.eps
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Estructura del recurso REST
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde la 
+\shape italic
+interfaz HTTP
+\shape default
+, comunica consumidores y proveedores, y es en ella donde se modifican los
+ recursos a través de operaciones del tipo: GET, POST, PUT y DELETE.
+ Y la 
+\shape italic
+representación de datos del recurso
+\shape default
+, identificada por una URI, es un fichero en formato XML y/o JSON que es
+ enviada y recibida al realizar peticiones.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Comparativa entre Servicios Web basados en SOAP y los basados en REST
+\end_layout
+
+\begin_layout Standard
+Muchos diseñadores de Servicios Web están llegando a la conclusión de que
+ los servicios Web basados en SOAP son demasiado complicados respecto a
+ los basados en REST.
+ Este común acuerdo se debe principalmente, a la potencial escalabilidad
+ de REST, ya que maneja mejor los tiempos de respuesta y disminuye la carga
+ en los servidores.
+ Por esta razón, compañías como 
+\shape italic
+Facebook
+\shape default
+, 
+\shape italic
+Google
+\shape default
+ y 
+\shape italic
+Yahoo
+\shape default
+ entre otras, están comenzando a migrar sus servicios a implementaciones
+ bajo REST.
+\end_layout
+
+\begin_layout Standard
+En las tablas 1.1 y 1.2 se realiza una comparativa, bajo distintos puntos
+ de vista, entre los servicios basados en REST y los basados en SOAP.
+ Esta comparativa es el resumen del estudio realizado por varios autores
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pautasso2007,brogden2009,Pautasso:2008:RWS:1367497.1367606"
+
+\end_inset
+
+ y es considerada como un aporte importante de la realización del trabajo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="15" columns="3">
+<features tabularvalignment="top">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="block" valignment="top" width="44col%">
+<column alignment="block" valignment="top" width="44col%">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\series bold
+REST
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\series bold
+SOAP
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Descripción del Servicio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+WADL propuesto para ser estándar en noviembre de 2006
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+WSDL 2.0, estándar en su última versión
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Las operaciones se definen en los mensajes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Las operaciones son definidas como puertos WSDL
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Interactuar con el servicio supone horas de testeado y depuración de URIs
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se pueden construir automáticamente stubs (clientes) por medio del WSDL
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No es necesario el tipado fuerte, si ambos lados están de acuerdo con el
+ contenido
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+Tipado fuerte, sigue un contrato
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Protocolo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Protocolo HTTP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Protocolo independiente del transporte
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HTTP es un protocolo de aplicación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HTTP es un protocolo de transporte
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Síncrono
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Síncrono y Asíncrono
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transfiere XML y/o JSON
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transfiere XML
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XML autodescriptivo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipado fuerte, XML Schema
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gestión del Estado
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Los recursos contienen datos y enlaces representando transiciones de estados
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Los mensajes solo contienen datos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Los clientes mantienen el estado siguiendo los enlaces
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Los clientes mantienen el estado suponiendo el estado del servicio
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Técnicas para añadir sesiones: Cookies
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Técnicas para añadir sesiones: Cabecera de sesión (no estándar)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Comparativa entre Servicios Web basados en REST y SOAP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="17" columns="3">
+<features tabularvalignment="top">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="block" valignment="top" width="44col%">
+<column alignment="block" valignment="top" width="44col%">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\series bold
+REST
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\series bold
+SOAP
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tecnología
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+No es un estándar pero utiliza componentes que si lo son
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Estándar con mucho apoyo por parte de la industria
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Componentes débilmente acoplados
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Componentes fuertemente acoplados
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fácil de implementar y mantener
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fácil de implementar pero costoso mantener
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fácil de consumir, no hace faltan herramientas específicas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Complicado de consumir si no se tiene el framework adecuado
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pocas operaciones, muchos recursos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Muchas operaciones, pocos recursos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Alto rendimiento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No tiene buen rendimiento con respecto a REST pero mejora en SOAP 1.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se centra en el rendimiento a gran escala para sistemas distribuidos hipermedia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+Se centra en el diseño de aplicaciones distribuidas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Seguridad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HTTPS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Especificaciones WS-*.
+ Como por ejemplo WS-Security
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Existen implementaciones y otras que están comenzando a aparecer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implementado desde hace muchos años
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comunicación punto a punto segura
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comunicación origen a destino segura
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Metodología de diseño
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Identificar recursos a ser expuestos como servicios
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Listar las operaciones del servicio en el documento WSDL
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definir URLs para direccionarlos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definir un modelo de datos para el contenido de los mensajes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Distinguir los recursos de solo lectura (GET) de los modificables (POST,
+ PUT, DELETE)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Elegir un protocolo de transporte y definir las correspondientes políticas
+ QoS, de seguridad y transacción
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implementar e implantar el servidor Web
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implementar e implantar el contenedor del servicio Web 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Comparativa entre Servicios Web basados en REST y SOAP (continuación)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A manera de resumen se puede concluir la comparativa indicando que:
+\end_layout
+
+\begin_layout Itemize
+SOAP es un estilo más adecuado para entornos aislados, es decir para una
+ organización, REST en cambio escala mejor a dimensiones de la Web.
+\end_layout
+
+\begin_layout Itemize
+SOAP recibe bastante apoyo por parte de la industria debido a las especificacion
+es WS-* que se emplean para procesos de seguridad, políticas y autorización.
+ REST en cambio, se ve diezmado en estándares y especificaciones.
+\end_layout
+
+\begin_layout Itemize
+REST es más sencillo de consumir ya que falicita el desarrollo de clientes,
+ pudiendo existir clientes en AJAX.
+ Sin embargo, en SOAP se necesitan frameworks, como JAX-WS de JAVA.
+ 
+\end_layout
+
+\begin_layout Itemize
+La arquitectura SOA ha nacido bajo servicios Web basados en SOAP, pero existen
+ pocos casos en los que REST ha sido implementado con SOA.
+ Investigadores como Pautasso y Balasubramanian vienen trabajando en implementac
+iones SOA con este tipo de servicios 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pautasso09"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+En REST el ancho de banda está mejor aprovechado, llegando a ser muy útil
+ para dispositivos móviles como PDAs o teléfonos móviles.
+ Sin embargo, SOAP consume muchos recursos.
+\end_layout
+
+\begin_layout Itemize
+La seguridad y los procesos transaccionales son mejor tratados con SOAP
+ a diferencia de REST, ya que SOAP define protocolos en su pila de componentes
+ WS-* que son exclusivos para estos procesos.
+ Por lo que es recomendable emplear SOAP en procesos delicados como, por
+ ejemplo, pagos con tarjeta de crédito.
+\end_layout
+
+\begin_layout Itemize
+SOAP no permite lograr mayor interoperabilidad entre servicios que REST,
+ debido a la gran cantidad de especificaciones que emplea.
+ 
+\end_layout
+
+\begin_layout Standard
+Dicho lo anterior, se puede concluir indicando que la respuesta a “
+\shape italic
+¿qué es mejor, SOAP o REST?
+\shape default
+” es “
+\shape italic
+¡depende!
+\shape default
+”.
+ Tanto el estilo arquitectónico de REST y SOAP con sus protocolos WS-* tienen
+ ventajas e inconvenientes en cuanto al crear servicios, la Figura 1.4 lo
+ describe claramente 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zozol2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/1-4_soap_vs_rest.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Servicios Web basados en SOAP vs.
+ basados en REST
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sin embargo, al pensar en aplicaciones empresariales a menudo la velocidad
+ y escalabilidad son las diferencias principales entre REST y SOAP.
+ Los servicios basados en REST son mucho más escalables y rápidos en tiempo
+ de respuesta que los que están en SOAP.
+ Estas razones, son por supuesto, las causantes a la hora de elegir un estilo
+ para exponer servicios a través de Internet.
+\end_layout
+
+\begin_layout Subsection
+La Web Semántica
+\end_layout
+
+\begin_layout Standard
+La Web esta considerada como uno de los mayores inventos en la historia
+ de la humanidad.
+ Hoy casi todo está representado de una u otra forma en la Web y pese al
+ gran aporte a nuestra sociedad, presenta dificultades como son la descripción
+ sintáctica de la información, el crecimiento caótico de los recursos, y
+ la ausencia de una estructura y organización en los contenidos y servicios
+ disponibles en la WWW.
+ 
+\end_layout
+
+\begin_layout Standard
+Debido a esto, Tim Berners-Lee
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Tim Berners-Lee: inventor de la WWW y director de la W3C
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "citeulike:1176986"
+
+\end_inset
+
+, propone a la Web Semántica como una extensión de la Web tradicional, que
+ permite a las maquinas entender la semántica, o significado, de la información
+ en base a anotaciones basadas en descripciones ontológicas.
+ Esta anotación semántica permite dotar a la gran cantidad de información
+ de la Web de una estructura lógica, basada generalmente en soluciones de
+ gestión del conocimiento, que permite a los usuarios y las máquinas, buscar
+ y relacionar información de una forma más automática y directa.
+\end_layout
+
+\begin_layout Standard
+La Figura 1.5 extraída de 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "castells2003"
+
+\end_inset
+
+ ilustra esta propuesta.
+ La Web actual se asemeja a un grafo formado por nodos y arcos del mismo
+ tipo.
+ Por el contrario, en la Web Semántica cada nodo tiene un tipo y los arcos
+ representan relaciones explícitamente diferenciadas.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/1-5-1_web_actual.eps
+	scale 55
+	rotateOrigin leftBaseline
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+La Web actual
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hspace*{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/1-5-2_web_semantica.eps
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Web Semántica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Web actual vs.
+ Web Semántica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por otra parte, la Figura 1.6 describe la arquitectura de la Web Semántica
+ presentada por Berners-Lee en el discurso de apertura en la Conferencia
+ WWW2005
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://www.w3.org/2005/Talks/0511-keynote-tbl/.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/1-6_arquitectura_web_semantica.eps
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Arquitectura de la Web Semántica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde las capas inferiores (URI, Unicode, XML y Namespaces) consisten en
+ estándares Web que proveen una base sintáctica a los lenguajes de la Web
+ Semántica.
+ 
+\series bold
+\shape italic
+URI
+\series default
+\shape default
+ proporciona de un medio para identificar los recursos en la Web.
+ 
+\series bold
+\shape italic
+Unicode
+\series default
+\shape default
+ provee el esquema de codificación de caracteres, utilizado por 
+\series bold
+\shape italic
+XML
+\series default
+\shape default
+, para aportar la sintaxis a los documentos estructurados.
+ Y cada documento o recurso empleará un espacio de nombres (
+\series bold
+\shape italic
+Namespaces
+\series default
+\shape default
+) para declarar su ámbito.
+\end_layout
+
+\begin_layout Standard
+Las capas intermedias, RDF (
+\shape italic
+Resource Description Framework
+\shape default
+), RDFSchema (
+\shape italic
+Resource Description Framework Schema
+\shape default
+), OWL (
+\shape italic
+Ontology Web Language
+\shape default
+), SPARQL (
+\shape italic
+SPARQL Protocol and RDF Query Language
+\shape default
+) y Rules, son las que dotarán a cada recurso o contenido de la Web, de
+ lógica y significado.
+ 
+\series bold
+\shape italic
+RDF
+\series default
+\shape default
+ será el modelo de datos para los recursos y las relaciones que se puedan
+ establecer entre éstos.
+ Agregándole a éste 
+\series bold
+\shape italic
+RDF Schema
+\series default
+\shape default
+, se obtiene un vocabulario para describir las propiedades y las clases
+ de los recursos RDF.
+ En base a esto, el lenguaje de marcado 
+\series bold
+\shape italic
+OWL
+\series default
+\shape default
+ definirá ontologías en la Web y se definirán 
+\series bold
+\shape italic
+Reglas
+\series default
+\shape default
+ con las que será capaz de representar conocimiento en base a motores de
+ razonamiento.
+ También pueden emplearse consultas en formato 
+\series bold
+\shape italic
+SPARQL
+\series default
+\shape default
+: lenguaje estandarizado para la consulta de grafos RDF análogo a SQL (
+\shape italic
+Structured Query Language
+\shape default
+).
+\end_layout
+
+\begin_layout Standard
+Las capas superiores y restantes son las que proporcionarán características
+ similares a las que se pueden encontrar en la lógica de primer orden (FOL),
+ donde la idea será establecer un principio lógico y permitir que las computador
+as razonen por inferencia utilizando estos principios.
+ Motores de inferencia, también llamados razonadores, son las aplicaciones
+ que derivarán nuevos hechos o asociaciones a partir de la información ya
+ existente.
+ El uso de motores de inferencia en la Web Semántica permite a las aplicaciones
+ consultar el por qué una determinada conclusión se ha alcanzado, es decir,
+ dar prueba de sus conclusiones.
+ Estas pruebas se las realiza en la capa 
+\series bold
+\shape italic
+Proof
+\series default
+\shape default
+ de la arquitectura, y en la última capa, se tiene a la confianza (
+\series bold
+\shape italic
+Trust
+\series default
+\shape default
+), que será la que proporcionará la autenticación de la identidad y las
+ pruebas de la fiabilidad de los datos y servicios.
+\end_layout
+
+\begin_layout Standard
+Hoy en día, existen muchos motores de inferencia disponibles.
+ Entre los principales se destacan:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Jena Reasoner
+\series default
+\shape default
+: Se trata de un marco de código abierto de Java para escribir aplicaciones
+ Web Semántica desarrollado por los laboratorios de HP
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "http://jena.sourceforge.net/"
+target "http://jena.sourceforge.net/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ Incluye un motor de inferencia basado en reglas genéricas, junto a conjuntos
+ de reglas configuradas para RDFS y OWL.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Pellet
+\series default
+\shape default
+: Es un razonador Open Source para OWL-DL.
+ Originalmente se desarrolló en el Laboratorio Mindswap de Maryland
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.mindswap.org/2003/pellet/index.shtml"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, fue construido en JAVA y actualmente soporta toda la expresividad de la
+ Lógica Descriptiva (DL).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+FaCT++
+\series default
+\shape default
+: Es un razonador de Lógica de Descripción y permite el razonamiento con
+ el lenguaje OWL.
+ Fue desarrollado en la Universidad de Manchester 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "http://owl.cs.manchester.ac.uk/fact++/"
+target "http://owl.cs.manchester.ac.uk/fact++/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ y es una reimplementación de la razonador FaCT.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+SWI-Prolog Semantic Web Library
+\series default
+\shape default
+: Es un lenguaje natural para trabajar con RDF y OWL.
+ Los desarrolladores de SWI-Prolog han creado un conjunto de herramientas
+ para la creación y edición de aplicaciones RDF y OWL, así como un paquete
+ de razonamiento
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.swi-prolog.org/"
+target "http://www.swi-prolog.org/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Ontología
+\end_layout
+
+\begin_layout Standard
+La Web Semántica rescata la noción de ontología del campo de la Inteligencia
+ Artificial como vehículo para cumplir su objetivo.
+ Es por esta razón que a la ontología se la considera como el núcleo de
+ la Web Semántica.
+\end_layout
+
+\begin_layout Standard
+La Ontología es una descripción de una pequeña parte del mundo real, de
+ los elementos que aparecen en él, de sus tipos, de las relaciones entre
+ éstos y sus restricciones.
+ Según Fensel 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2001:OSB:375111"
+
+\end_inset
+
+, las ontologías representan de manera formal y consensuada especificaciones
+ de conceptos, que proveen un conocimiento compartido y común del dominio
+ como información semántica procesable por las máquinas e interoperable
+ a través de agentes (organizaciones, individuos y software).
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gruber:1993:TAP:173743.173747"
+
+\end_inset
+
+, Gruber define los siguientes componentes de una ontología que servirán
+ para representar el conocimiento de algún dominio.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Conceptos
+\series default
+\shape default
+: son las ideas básicas que se intentan formalizar.
+ Los conceptos pueden ser clases de objetos, métodos, planes, estrategias,
+ procesos de razonamiento, etc.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Relaciones
+\series default
+\shape default
+: representan la interacción y enlace entre los conceptos del dominio.
+ Suelen formar la taxonomía del dominio.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Funciones
+\series default
+\shape default
+: son un tipo concreto de relación donde se identifica un elemento mediante
+ el cálculo de una función que considera varios elementos de la ontología.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Instancias
+\series default
+\shape default
+: se utilizan para representar objetos determinados de un concepto.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Axiomas
+\series default
+\shape default
+: son teoremas que se declaran sobre relaciones que deben cumplir los elementos
+ de la ontología.
+ 
+\end_layout
+
+\begin_layout Standard
+OWL define además un conjunto de propiedades, que pueden ser aplicadas a
+ los elementos anteriores, como pueden ser: restricciones de cardinalidad
+ para las relaciones, propiedades de herencia para las clases, de igualdad
+ o desigualdad, etc.
+\end_layout
+
+\begin_layout Subsection
+Servicios Web Semánticos
+\end_layout
+
+\begin_layout Standard
+Mediante la especificación sintáctica de los Servicios Web es imposible
+ automatizar procesos tales como descubrimiento, ejecución y composición
+ de servicios.
+ Para solventar este problema, se desarrollaron los Servicios Web Semánticos
+ (SWS), que consisten, como se aprecia en la Figura 1.7 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fensel06"
+
+\end_inset
+
+, en la fusión de los Servicios Web tradicionales con las tecnologías empleadas
+ en la Web Semántica, para permitir la automatización de dichos procesos
+ empleando ontologías como modelo de datos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/1-7_sws.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+La evolución de la Web
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los SWS por tanto, son una línea importante de la Web Semántica que propone
+ describir no sólo información sino definir ontologías de funcionalidad
+ y procedimientos para describir Servicios Web: sus entradas y salidas,
+ las condiciones necesarias para que se puedan ejecutar, los efectos que
+ producen, o los pasos a seguir cuando se trata de un servicio compuesto.
+ Estas descripciones procesables por máquinas permiten automatizar el descubrimi
+ento, la composición, y la ejecución de servicios, así como la comunicación
+ entre unos y otros.
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, un Servicio Web Semántico está compuesto por un Servicio Web
+ y una descripción semántica sobre dicho servicio.
+ Esta descripción semántica consiste en asociar: conceptos, relaciones e
+ instancias de una ontología, con parámetros y operaciones de un Servicio
+ Web.
+ Para esto, a continuación, se describen los dos enfoques más sobresalientes:
+ OWL-S
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.w3.org/Submission/OWL-S/"
+target "http://www.w3.org/Submission/OWL-S/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, desarrollado por la W3C y WSMO
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.wsmo.org/"
+target "http://www.wsmo.org/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, desarrollado por la ESSI (
+\shape italic
+European Semantic Systems Initiative
+\shape default
+).
+ Existen otros marcos de trabajo como WSDL-S
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.w3.org/Submission/WSDL-S/"
+target "http://www.w3.org/Submission/WSDL-S/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ y SWSF
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.w3.org/Submission/SWSF/"
+target "http://www.w3.org/Submission/SWSF/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, pero éstos no son descritos debido a que los primeros son los más sobresalient
+es.
+\end_layout
+
+\begin_layout Subsubsection
+OWL-S
+\end_layout
+
+\begin_layout Standard
+OWL-S es una ontología de Servicios Web basada en OWL.
+ Añade un marcado de metadatos en los proveedores de los Servicios Web,
+ permitiendo la descripción de las propiedades y funcionalidades de cualquier
+ servicio, de forma no ambigua, bien definida y computable.
+ 
+\end_layout
+
+\begin_layout Standard
+Para ese efecto, OWL-S se basa en la definición de varias ontologías escritas
+ en OWL que permiten describir los SWS en diferentes niveles de abstracción.
+ Según este enfoque, la anotación semántica trata de dar respuesta a tres
+ cuestiones esenciales para cualquier Servicio Web: ¿qué ofrece el servicio?,
+ ¿cómo funciona? y ¿cómo se accede?, para esto, la ontología propuesta por
+ OWL-S está compuesta por tres partes fundamentales, presentadas en la Figura
+ 1.7 extraída de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sws04"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/1-8_ontologia_owls.eps
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ontologías de OWL-S
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Service Profile:
+\end_layout
+
+\begin_layout Standard
+La primera pregunta, 
+\shape italic
+¿qué ofrece el servicio?
+\shape default
+, se responde mediante la ontología llamada 
+\shape italic
+Service Profile
+\shape default
+.
+ En ella se definen propiedades del Servicio Web como:
+\end_layout
+
+\begin_layout Itemize
+Información del servicio y su proveedor: El nombre y descripción del servicio,
+ así como la información de contacto.
+\end_layout
+
+\begin_layout Itemize
+Funcionalidad del servicio: entradas, salidas, precondiciones y efectos,
+ comúnmente conocidos como IOPE's (
+\shape italic
+Inputs
+\shape default
+, 
+\shape italic
+Outputs
+\shape default
+, 
+\shape italic
+Preconditions
+\shape default
+ y 
+\shape italic
+Effects
+\shape default
+).
+ Estos IOPE's descritos en esta ontología deberán corresponderse con los
+ IOPE's definidos posteriormente en el 
+\shape italic
+Service Model
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Características del servicio: Parámetros adicionales que referencian instancias
+ en ontologías ya existentes y propiedades para categorizar el servicio
+ de acuerdo a estándares como NAICS
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.census.gov/eos/www/naics/"
+target "http://www.census.gov/eos/www/naics/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ o UNSPSC
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.unspsc.org/"
+target "http://www.unspsc.org/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+El sistema de catalogación UNSPSC es un sistema de cifrado que clasifica
+ productos y servicios para fines comerciales a escala mundial.
+ Es un estándar de Naciones Unidas y la forma más eficiente, precisa y flexible
+ de clasificación disponible.
+ El NAICS es para el sector de la industria.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Service Model:
+\end_layout
+
+\begin_layout Standard
+La definición de 
+\shape italic
+Service Model
+\shape default
+ responde a la pregunta: 
+\shape italic
+¿cómo funciona?
+\shape default
+, por lo que esta ontología es la encargada de describir con detalle las
+ operaciones procesadas por un servicio.
+ 
+\end_layout
+
+\begin_layout Standard
+El servicio se modela como un proceso de interacción entre el cliente y
+ el servicio.
+ Existen tres tipos de proceso: 
+\end_layout
+
+\begin_layout Itemize
+Atómico: Formados por IOPE's que pueden ser ejecutados directamente.
+\end_layout
+
+\begin_layout Itemize
+Compuesto: Tienen asociado una estructura de control, ya sea ésta, una secuencia
+, condición o iteración.
+\end_layout
+
+\begin_layout Itemize
+Simple: Abstracción de procesos atómicos y compuestos.
+ 
+\end_layout
+
+\begin_layout Standard
+Por consiguiente, cualquier servicio será visto como un proceso, bien sea
+ atómico o compuesto, que bajo ciertas condiciones y unos parámetros de
+ entrada, produce una serie de salidas que cumplen ciertas pre-condiciones.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Service Grounding:
+\end_layout
+
+\begin_layout Standard
+El 
+\shape italic
+Service Grounding
+\shape default
+ responde a la última pregunta: 
+\shape italic
+¿cómo se accede?
+\shape default
+, esta ontología realiza una descripción de las relaciones existentes entre
+ la descripción del proceso realizado en OWL-S y la descripción real, en
+ el lenguaje original, de los elementos necesarios para interactuar con
+ el servicio.
+\end_layout
+
+\begin_layout Standard
+Aunque OWL-S no pretende restringir el lenguaje de definición del servicio,
+ el primer enfoque de 
+\shape italic
+Service Grounding
+\shape default
+ se basa en WSDL.
+ Y aunque una de las ventajas es que exista una correspondencia directa
+ entre los elementos de OWL-S y WSDL.
+ Para los desarrolladores esto representa una restricción, ya que sólo se
+ puede trabajar con servicios descritos en WSDL, que en todo caso son Servicios
+ Web basados en SOAP.
+\end_layout
+
+\begin_layout Subsubsection
+WSMO
+\end_layout
+
+\begin_layout Standard
+WSMO es una ontología y un modelo conceptual para describir SWS.
+ Este proyecto europeo dirigido por ESSI, está basada en WSMF (
+\shape italic
+Web Service Modeling Framework
+\shape default
+) y consiste en cuatro elementos básicos, tal como muestra la Figura 1.8
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "poll-etal-2005"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/1-9_wsmo.eps
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Componentes de WSMO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Ontologías:
+\end_layout
+
+\begin_layout Standard
+Las ontologías proporcionan la especificación formal de la información usada
+ por todos los componentes.
+ Esta compuesta por: 
+\end_layout
+
+\begin_layout Itemize
+Propiedades no funcionales, como pueden ser identificador, título, descripción,
+ fecha, propietario, etc.
+ 
+\end_layout
+
+\begin_layout Itemize
+Ontologías importadas, son ontologías de las que se hace uso en la ontología
+ actual.
+ 
+\end_layout
+
+\begin_layout Itemize
+Mediadores entre ontologías, son mediadores que intervienen para resolver
+ los desajustes con las ontologías importadas.
+\end_layout
+
+\begin_layout Itemize
+Conceptos, Relaciones e Instancias, que representan entidades del mundo
+ real.
+\end_layout
+
+\begin_layout Itemize
+Funciones, que son relaciones especiales que actúan con múltiples dominios
+ y un solo rango.
+\end_layout
+
+\begin_layout Itemize
+Axiomas, que representan expresiones lógicas.
+\end_layout
+
+\begin_layout Paragraph
+Descripción de Servicios Web:
+\end_layout
+
+\begin_layout Standard
+Una descripción semántica de servicio Web consiste en: 
+\end_layout
+
+\begin_layout Itemize
+Propiedades no funcionales: en este caso se añaden propiedades inherentes,
+ a las ya comentadas anteriormente, tales como seguridad, robustez, y escalabili
+dad.
+\end_layout
+
+\begin_layout Itemize
+Capacidad: describe funcionalmente el servicio y a diferencia de otros elementos
+, un servicio no puede tener más de una capacidad.
+ 
+\end_layout
+
+\begin_layout Itemize
+Interfaz: describe el servicio desde el punto de vista operacional, para
+ esto se utilizan dos enfoques, coreografía u orquestación.
+ La coreografía describe el servicio desde el punto de vista del cliente
+ y la orquestación describe cómo el servicio interactúa con otros servicios
+ para conseguir la funcionalidad requerida.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Objetivos:
+\end_layout
+
+\begin_layout Standard
+Un objetivo es la representación del servicio que el cliente está buscando.
+ Los objetivos se componen de: 
+\end_layout
+
+\begin_layout Itemize
+Propiedades no funcionales.
+\end_layout
+
+\begin_layout Itemize
+Ontologías importadas.
+\end_layout
+
+\begin_layout Itemize
+Mediadores utilizados.
+\end_layout
+
+\begin_layout Itemize
+Capacidad buscada.
+\end_layout
+
+\begin_layout Itemize
+Interfaz buscada.
+\end_layout
+
+\begin_layout Paragraph
+Mediadores:
+\end_layout
+
+\begin_layout Standard
+Por último, los mediadores, son conectores entre componentes, que permiten
+ resolver problemas de interoperabilidad y facilitan la integración entre
+ información heterogénea.
+ Pueden ser de cuatro tipos: 
+\end_layout
+
+\begin_layout Itemize
+Mediadores entre ontologías (OOMediators), resuelven incompatibilidades.
+ 
+\end_layout
+
+\begin_layout Itemize
+Mediadores entre objetivos (GGMediators), buscan el refinamiento y la compatibil
+idad entre objetivos.
+\end_layout
+
+\begin_layout Itemize
+Mediadores entre un servicio Web y un objetivo (WGMediator), busca la satisfacci
+ón de las necesidades.
+ 
+\end_layout
+
+\begin_layout Itemize
+Mediadores entre servicios Web (WWMediator): Utilizado en composición de
+ servicios.
+\end_layout
+
+\begin_layout Section
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+Hecha la revisión a los antecedentes y al estado del arte, se puede concluir
+ indicando que el registro sintáctico utilizado por SOA es insuficiente.
+ Debido a que procesos como la búsqueda, descubrimiento y composición de
+ servicios, son más costosos de realizar y hasta a veces imprecisos.
+\end_layout
+
+\begin_layout Standard
+Para resolver este inconveniente se recurrirá a la Web Semántica y al estándar
+ OWL-S, como soluciones factibles para incorporar semántica a los servicios
+ Web.
+ Con éstas la información se encontrará mejor definida, de forma que pueda
+ ser interpretada por las máquinas y de este modo realizar, al menos de
+ forma semiautomática, operaciones de búsqueda, descubrimiento, composición
+ y ejecución de servicios Web.
+ 
+\end_layout
+
+\begin_layout Standard
+En resumen, en este capítulo se ha analizado la problemática presentada
+ en los SWS en un ambiente SOA.
+ Al ser una tecnología incipiente, nos encontramos en un punto inicial de
+ investigación en este campo, donde se hace necesario cubrir aspectos como:
+ la implementación de prototipos semánticos, con los que se demuestren las
+ capacidades reales de OWL-S; y la modificación de la estructura de OWL-S,
+ para que pueda soportar otras tecnologías como REST.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch NoChildDocument
+status open
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bibliografia"
+options "unsrt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "custom"
+width "2.5cm"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,2669 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrbook
+\begin_preamble
+% increase link area for cross-references and autoname them
+\AtBeginDocument{\renewcommand{\ref}[1]{\mbox{\autoref{#1}}}}
+\newlength{\abc}
+\settowidth{\abc}{\space}
+\AtBeginDocument{%
+\addto\extrasenglish{
+ \renewcommand{\equationautorefname}{\hspace{-\abc}}
+ \renewcommand{\sectionautorefname}{sec.\negthinspace}
+ \renewcommand{\subsectionautorefname}{sec.\negthinspace}
+ \renewcommand{\subsubsectionautorefname}{sec.\negthinspace}
+ \renewcommand{\figureautorefname}{Fig.\negthinspace}
+ \renewcommand{\tableautorefname}{Tab.\negthinspace}
+}
+}
+
+% in case somebody want to have the label "Gleichung"
+%\renewcommand{\eqref}[1]{Gleichung~(\negthinspace\autoref{#1})}
+
+% put the link to figure floats to the beginning
+% of the figure and not to its end
+\usepackage[figure]{hypcap}
+
+% the pages of the TOC is numbered roman
+% and a pdf-bookmark for the TOC is added
+\let\myTOC\tableofcontents
+\renewcommand\tableofcontents{%
+  \frontmatter
+  \pdfbookmark[1]{\contentsname}{}
+  \myTOC
+  \mainmatter }
+
+% make caption labels bold
+\setkomafont{captionlabel}{\bfseries}
+\setcapindent{1em}
+
+% enable calculations
+\usepackage{calc}
+
+% fancy page header/footer settings
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+
+% increase the bottom float placement fraction
+\renewcommand{\bottomfraction}{0.5}
+
+% avoid that floats are placed above its sections
+\let\mySection\section\renewcommand{\section}{\suppressfloats[t]\mySection}
+\end_preamble
+\options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage,fleqn
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans lmss
+\font_typewriter lmtt
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_title "Implementación de Servicios Web Semánticos para Arquitecturas SOA"
+\pdf_author "Lucio Marcelo Quispe"
+\pdf_subject "Tesis para la obtención del grado de Máster en Tecnologías Informáticas"
+\pdf_keywords "Servicios Web, Arquitectura SOA, Web Semántica, SOAP, REST, Ontologías"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch NoChildDocument
+\selected 0
+\filename_suffix 0
+\color #ff0000
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rightmark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptername
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thechapter
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+leftmark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Enable page headers and add the chapter to the header line.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Footer
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+
+\end_layout
+
+\begin_layout Chapter
+Implementación de Servicios Web Semánticos con OWL-S
+\end_layout
+
+\begin_layout Section
+Infraestructura de los Servicios Web Semánticos
+\end_layout
+
+\begin_layout Standard
+Según 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cabral2004approaches"
+
+\end_inset
+
+, la infraestructura de los SWS se caracteriza en tres dimensiones (Figura
+ 2.1): Actividades de uso, Arquitectura y Ontología del servicio.
+ Estas dimensiones se refieren a los requisitos de los SWS en niveles del
+ negocio, físico y conceptual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/2-1_infraestructura_sws.eps
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Dimensiones de la infraestructura de los SWS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Actividades de uso
+\end_layout
+
+\begin_layout Standard
+Las actividades de uso de los SWS representan requisitos funcionales que
+ un framework de SWS debe cumplir.
+ Desde esta perspectiva, los SWS son vistos como objetos dentro de un escenario
+ de ejecución de aplicaciones de negocios.
+ Las actividades necesarias para el funcionamiento de una aplicación que
+ utiliza SWS incluyen:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Publicación de servicios en un registro semántico
+\series default
+\shape default
+: Permite a agentes y aplicaciones publicar servicios Web basándose en las
+ características y capacidades que éstos tengan.
+ El registro semántico se utiliza para comparar las instancias de los SWS
+ registrados durante el descubrimiento y se lo utiliza durante la invocación
+ de servicios.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Descubrimiento de servicios
+\series default
+\shape default
+: Consiste en una comparativa semántica entre la descripción del servicio
+ solicitado y la descripción del servicio publicado.
+ Las consultas involucran el nombre del servicio, los parámetros de entrada
+ y salida, las condiciones previas y otros atributos que pueden ser utilizados
+ para la búsqueda en el registro semántico.
+ El Descubrimiento puede también hacerse a nivel de tareas o metas a alcanzar,
+ seguido por una selección de servicios, donde se tomé en cuenta además
+ el grado de coincidencia basado en algunos criterios.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Selección de servicios
+\series default
+\shape default
+: Es necesaria cuando se produce un conflicto entre varios servicios que
+ satisfacen una misma petición.
+ En este caso, atributos no funcionales como el costo o la calidad, pueden
+ ser utilizados para la elección de un servicio.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Composición o coreografía
+\series default
+\shape default
+: Permite que los SWS se definan en términos de otros servicios más simples,
+ de modo que se puedan componer de forma dinámica durante la solicitud de
+ servicio.
+ En esta tarea los servicios atómicos, necesarios para resolver una solicitud,
+ se encuentran compuestos sobre la marcha en base a las coincidencias de
+ sus parámetros de entrada y salida.
+ Un lenguaje de descripción de procesos, empleado para la composición de
+ servicios, podría ser el BEPL4WS (
+\shape italic
+Business Process Execution Language for Web Services
+\shape default
+) 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://www.ibm.com/developerworks/library/specification/ws-bpel/.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Invocación
+\series default
+\shape default
+: Implica que dadas las entradas de la solicitud de servicio, éstas deben
+ ser validadas de acuerdo a sus tipos, para que posteriormente el servicio
+ pueda ser ejecutado.
+ También es importante, una vez ejecutado el servicio éste pueda ser monitoreado
+, para que en caso sea necesario se notifique de su estado al solicitante.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Despliegue
+\series default
+\shape default
+: La implementación de un SWS por un proveedor es independiente de la publicació
+n de su descripción semántica, ya que el mismo servicio Web puede tener
+ múltiples propósitos.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+OJO: despliegue significa puesta implementación o puesta en funcionamiento.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Gestión de ontologías
+\series default
+\shape default
+: Es una actividad fundamental para los SWS, ya que garantiza que las descripcio
+nes semánticas sean creadas, accedidas y reutilizadas.
+\end_layout
+
+\begin_layout Subsection
+Arquitectura 
+\end_layout
+
+\begin_layout Standard
+La arquitectura de un framework de SWS define los componentes necesarios
+ para cumplir las actividades de uso especificadas anteriormente.
+ Estos componentes son: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Un Registro
+\series default
+\shape default
+: Proporciona mecanismos necesarios para publicar y localizar los SWS, así
+ como funcionalidades para crear y/o modificar la descripción semántica
+ de los servicios.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Un Razonador
+\series default
+\shape default
+: Realiza consultas e interpreta la descripción semántica de los servicios.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+El Matchmaker
+\series default
+\shape default
+: Actúa como mediador entre el solicitante y el registro durante el descubrimien
+to y la selección de servicios.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+El Decomposer
+\series default
+\shape default
+: Componente encargado de ejecutar la composición de servicios.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+El Invocador
+\series default
+\shape default
+: Mediador entre el solicitante y el proveedor, o entre el decomposer y
+ el proveedor, cuando se invoca un servicio.
+ 
+\end_layout
+
+\begin_layout Subsection
+Ontología del Servicio
+\end_layout
+
+\begin_layout Standard
+Por último, la ontología del servicio representa las capacidades del servicio
+ y sus restricciones de uso.
+ Integra esencialmente la semántica del servicio con la descripción que
+ ha sido definida por estándares de servicios Web, como UDDI y WSDL.
+ Consta de los siguientes elementos: 
+\end_layout
+
+\begin_layout Itemize
+Información funcional del servicio: Entradas, salidas, pre-condiciones y
+ pos-condiciones.
+\end_layout
+
+\begin_layout Itemize
+Información no funcional: Categoría, coste y calidad de servicio.
+ También se pueden añadir otros parámetros que se deseen medir.
+\end_layout
+
+\begin_layout Itemize
+Información relacionada con el Proveedor: Nombre y dirección de la empresa,
+ entre otros.
+\end_layout
+
+\begin_layout Itemize
+Información relacionada con las tareas y/u objetivos.
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, esta información puede, de hecho, dividirse en varias ontologías.
+ Sin embargo, la ontología de servicios utilizados para la descripción de
+ SWS se basará en el poder de inferencia del lenguaje semántico empleado
+ en las ontologías.
+\end_layout
+
+\begin_layout Section
+Modelado Semántico para Servicios Web utilizando OWL-S
+\end_layout
+
+\begin_layout Standard
+Son dos los frameworks principales que han estado impulsando el desarrollo
+ de SWS: WSMO 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sycara1999dynamic"
+
+\end_inset
+
+ y OWL-S 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wong2000taxonomy"
+
+\end_inset
+
+.
+ WSMO es un enfoque orientado a los negocios de los SWS, centrándose en
+ una serie de requisitos de comercio electrónico para los servicios Web,
+ incluyendo la confianza y la seguridad.
+ OWL-S sin embargo, es un enfoque orientado a describir las capacidades
+ de servicios y ofrece fundamentalmente una ontología que organiza y define
+ de una manera más clara la semántica de la información de los servicios
+ Web.
+ 
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, para los propósitos de este trabajo, a continuación se describe
+ la estructura general de la ontología de OWL-S con sus tres partes principales:
+ 
+\shape italic
+Service Profile
+\shape default
+, para publicar y descubrir servicios; el 
+\shape italic
+Service Model
+\shape default
+, para describir detalladamente el funcionamiento de los servicios; y el
+ 
+\shape italic
+Service Grounding
+\shape default
+, que proporciona información sobre cómo interoperar con un servicio a través
+ de mensajes.
+\end_layout
+
+\begin_layout Subsection
+Estructura de la Ontología
+\end_layout
+
+\begin_layout Standard
+La estructura de la ontología de OWL-S está diseñada por la necesidad de
+ ofrecer tres tipos esenciales de conocimiento acerca de un servicio.
+ Como se muestra en la Figura 2.2
+\shape italic
+ 
+\shape default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sws04"
+
+\end_inset
+
+, la ontología se divide a su vez por otras tres ontologías, que tratan
+ de dar respuesta a:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+¿Qué ofrece el servicio?
+\shape default
+:
+\series default
+ Esta pregunta se responde mediante la ontología 
+\shape italic
+Service Profile
+\shape default
+.
+ En ella se definen propiedades, ya sean funcionales y no funcionales, con
+ las que un agente de búsqueda determina si existe algún servicio que satisface
+ con la descripción solicitada en el proceso de descubrimiento.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+¿Cómo funciona?
+\series default
+\shape default
+: La respuesta a esta pregunta es el 
+\shape italic
+Service Model
+\shape default
+.
+ Con esta ontología se indica a un agente cómo debe utilizar el servicio,
+ detallando el contenido semántico de las solicitudes, las condiciones previas
+ y los resultados que se producirán.
+ Es decir, se describe cómo solicitar el servicio y lo que sucede cuando
+ el servicio se lleva a cabo.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+¿Cómo interactúa?
+\series default
+\shape default
+: La ontología 
+\shape italic
+Service Grounding
+\shape default
+ responde a esta pregunta, ya que especifica los detalles de cómo se puede
+ interactuar con un servicio.
+ Normalmente, esta ontología deberá especificar un protocolo de comunicación,
+ el formato de mensaje, y otros detalles técnicos del servicio.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/2-2_ontologia_owls.eps
+	scale 64
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ontología de servicios de OWL-S
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En términos generales, el 
+\shape italic
+Service Profile
+\shape default
+ proporciona la información necesaria para que un agente pueda descubrir
+ un servicio, mientras que el 
+\shape italic
+Service Model
+\shape default
+ y 
+\shape italic
+Service Grounding
+\shape default
+, en conjunto, proporcionan información suficiente para que un agente utilice
+ el servicio, una vez encontrado.
+ En los tres apartados siguientes se discuten con mayor detalle cada una
+ de estas ontologías.
+ 
+\end_layout
+
+\begin_layout Subsection
+Service Profile
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+¿No se si es necesario?
+\end_layout
+
+\begin_layout Plain Layout
+Una transacción en un mercado de servicios Web consta de tres partes: el
+ solicitante, el proveedor y los componentes de la infraestructura [16,17].
+ El solicitante del servicio, que puede identificarse con el comprador,
+ busca un servicio para completar su trabajo; el proveedor de servicios,
+ que pueden ser identificado con el vendedor, ofrece el servicio buscado
+ por el solicitante.
+ En un entorno abierto como Internet, el solicitante no puede saber de antemano
+ de la existencia del proveedor, por lo que el solicitante cuenta con los
+ componentes de infraestructura que actúan como registros para encontrar
+ al proveedor adecuado.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La ontología 
+\shape italic
+Service Profile
+\shape default
+ proporciona la descripción de los servicios ofrecidos por los proveedores
+ y los servicios requeridos por los solicitantes.
+ Esta ontología describe un servicio en función de tres tipos básicos de
+ información: La información del servicio, la funcionalidad, y las característic
+as del servicio.
+ Para cumplir con este propósito, la ontología emplea clases y propiedades
+ descritas en la Figura 2.3
+\shape italic
+ 
+\shape default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sws04"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/2-3_ontologia_service_profile.eps
+	scale 68
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Clases y Propiedades del 
+\shape italic
+Service Profile
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Información del servicio
+\end_layout
+
+\begin_layout Standard
+Consiste en información general del servicio: nombre, descripción e información
+ de contacto del autor o publicador.
+ Este perfil puede tener como máximo un nombre de servicio y descripción,
+ pero tantos elementos de información de contacto como el proveedor quiera
+ ofrecer.
+ Utiliza propiedades del 
+\shape italic
+Service Profile
+\shape default
+ como 
+\shape italic
+serviceName
+\shape default
+, 
+\shape italic
+textDescription
+\shape default
+ y 
+\shape italic
+ContactInformation
+\shape default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+serviceName
+\series default
+\shape default
+: Se refiere al nombre del servicio que se ofrece.
+ Puede ser utilizado como identificador del servicio.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+textDescription
+\series default
+\shape default
+: Ofrece una breve descripción del servicio.
+ En él se resume lo que el servicio ofrece, lo que el servicio requiere,
+ e indica información adicional que se quiera compartir entre solicitantes.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+ContactInformation
+\series default
+\shape default
+: Proporciona un mecanismo para referirse a las entidades o personas responsable
+s del servicio.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Funcionalidad del servicio 
+\end_layout
+
+\begin_layout Standard
+Además de la información puramente identificativa, en el 
+\shape italic
+Service Profile
+\shape default
+ se describe funcionalmente el servicio en base a las entradas, salidas,
+ condiciones previas y efectos, comúnmente conocidos como 
+\shape italic
+IOPE's
+\shape default
+ (
+\shape italic
+Inputs
+\shape default
+, 
+\shape italic
+Outputs
+\shape default
+, 
+\shape italic
+Preconditions
+\shape default
+ y 
+\shape italic
+Effects
+\shape default
+).
+ En ese sentido, la ontología 
+\shape italic
+Service Profile
+\shape default
+ de OWL-S presenta dos aspectos de la funcionalidad del servicio: la transformac
+ión de la información, representada por las entradas y salidas; y el cambio
+ de estado producido por la ejecución del servicio, por las condiciones
+ previas y el resultado.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Poner en el tercer capítulo
+\end_layout
+
+\begin_layout Plain Layout
+Por ejemplo, para completar la venta de libros, un servicio requiere como
+ entrada el número de tarjeta de crédito y la fecha de vencimiento, no sin
+ antes verificar previamente la validez de ambas.
+ El resultado de la venta es un recibo que confirma la correcta ejecución
+ de la transacción, y como efecto de la transferencia se realiza el envío
+ del libro desde el almacén a la dirección del comprador.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las propiedades de la ontología que hacen referencia a la funcionalidad
+ son:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+hasParameter
+\series default
+\shape default
+: Define los parámetros del servicio haciendo referencia a instancias de
+ la propiedad 
+\shape italic
+hasParameter
+\shape default
+ definida en la ontología 
+\shape italic
+ServiceProcess
+\shape default
+ (ontología definida dentro del 
+\shape italic
+Service Model
+\shape default
+).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+hasInput
+\series default
+\shape default
+ y 
+\series bold
+\shape italic
+hasOutput
+\series default
+\shape default
+: Representan las entradas y salidas del servicio respectivamente, y hacen
+ referencia, al igual que 
+\shape italic
+hasParameter
+\shape default
+, a instancias de las entradas y salidas que se definen posteriormente en
+ la ontología 
+\shape italic
+ServiceProcess
+\shape default
+.
+ Ambas, 
+\shape italic
+hasInput 
+\shape default
+y
+\shape italic
+ hasOutput
+\shape default
+,
+\shape italic
+ 
+\shape default
+son subpropiedades de la propiedad 
+\shape italic
+hasParameter
+\shape default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+hasPrecondition
+\series default
+\shape default
+: Define las condiciones del servicio que deben cumplirse previamente a
+ su ejecución y hace referencia a condiciones previas descritas en el 
+\shape italic
+Service Model
+\shape default
+, a través de instancias definidas por la ontología 
+\shape italic
+Expression
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+hasResult
+\series default
+\shape default
+: Describe uno de los resultados del servicio, tal como se define por la
+ clase 
+\shape italic
+Result
+\shape default
+ de la ontología 
+\shape italic
+ServiceProcess
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+Cabe aclarar que la ontología del 
+\shape italic
+Service Profile
+\shape default
+ no proporciona un esquema para crear instancias 
+\shape italic
+IOPE's
+\shape default
+, ya que sólo hace referencia a instancias creadas con la ontología 
+\shape italic
+ServiceProcess
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Características del Servicio
+\end_layout
+
+\begin_layout Standard
+En la sección anterior se ha realizado la descripción funcional de los servicios
+, pero hay otras propiedades útiles de los servicios de los cuales se debe
+ ser consciente.
+ Estos atributos adicionales pueden referirse a: garantías de calidad, que
+ son proporcionados por el servicio; categorización del servicio; y otros
+ parámetros que se desee especificar del mismo.
+\end_layout
+
+\begin_layout Standard
+Estos atributos son definidos por medio de las siguientes propiedades:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+serviceParameter
+\series default
+\shape default
+: Es una lista de propiedades que pueden acompañar a la descripción del
+ perfil de Servicios.
+ El valor de la propiedad es una instancia de la clase 
+\shape italic
+ServiceParameter
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+serviceCategory
+\series default
+\shape default
+: Se refiere a una entrada de alguna ontología o taxonomía de servicios.
+ El valor de la propiedad es una instancia de la clase 
+\shape italic
+ServiceCategory
+\shape default
+.
+\end_layout
+
+\begin_layout Paragraph
+ServiceParameter:
+\end_layout
+
+\begin_layout Standard
+Esta clase contiene las siguientes propiedades:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+serviceParameterName
+\series default
+\shape default
+: Es el nombre del parámetro, lo que podría ser un literal, o tal vez la
+ URI de un parámetro del Proceso (una propiedad).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+sParameter
+\series default
+\shape default
+: Señala el valor del parámetro dentro de alguna clase de tipo OWL.
+\end_layout
+
+\begin_layout Paragraph
+ServiceCategory:
+\end_layout
+
+\begin_layout Standard
+Describe las categorías de servicios sobre la base de una clasificación
+ que puede estar fuera de OWL-S y, posiblemente, fuera de OWL.
+ En este último caso, pueden requerir de un razonador especial por si se
+ desea hacer inferencia con él.
+ Las propiedades que contiene son:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+categoryName
+\series default
+\shape default
+: Es el nombre de la categoría, lo que podría ser sólo un literal, o tal
+ vez la URI de los parámetros del proceso (una propiedad).
+ Sin embargo, en su mayoría, para categorizar el servicio se hace referencia
+ a estándares como NAICS o UNSPSC.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+taxonomy
+\series default
+\shape default
+: Almacena una referencia al esquema de la taxonomía.
+ Puede ser la URI de la taxonomía, la URL donde reside, o el nombre con
+ el que se identifique.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+value
+\series default
+\shape default
+: Hace referencia a un valor de una taxonomía específica.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+code
+\series default
+\shape default
+: Almacena el código asociado a una taxonomía.
+\end_layout
+
+\begin_layout Standard
+Y por último, existen otras propiedades como 
+\series bold
+\shape italic
+serviceClassification
+\series default
+\shape default
+ y 
+\series bold
+\shape italic
+serviceProduct
+\series default
+\shape default
+, que se utilizan para especificar el tipo de servicio prestado y los productos
+ que son manejados por el servicio, respectivamente.
+ Son similares a 
+\shape italic
+serviceCategory
+\shape default
+ descrito anteriormente, pero se diferencian en que los valores de las propiedad
+es son instancias de OWL en lugar de cadenas que hacen referencias a taxonomías
+ de tipo no-OWL.
+\end_layout
+
+\begin_layout Subsection
+Service Model
+\end_layout
+
+\begin_layout Standard
+Para ofrecer una perspectiva detallada sobre la forma de interactuar con
+ servicios, cada uno de éstos debe ser visto como un proceso.
+ En concreto, OWL-S define la subclase 
+\shape italic
+Process
+\shape default
+, que se apoya sobre trabajos ya existentes y de referencia en materia de
+ inteligencia artificial, lenguajes de programación, sistemas distribuidos
+ y estándares en el campo de flujos de trabajo.
+\end_layout
+
+\begin_layout Standard
+El modelo de un servicio puede ser utilizado por los agentes de búsqueda
+ hasta de cuatro formas distintas: 
+\end_layout
+
+\begin_layout Enumerate
+Para analizar con más detalle si el servicio cumple los requisitos buscados.
+\end_layout
+
+\begin_layout Enumerate
+Para componer descripciones de múltiples servicios.
+\end_layout
+
+\begin_layout Enumerate
+Para coordinar clientes durante la ejecución de los servicios.
+\end_layout
+
+\begin_layout Enumerate
+Para monitorizar la ejecución del servicio.
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, es importante entender que un proceso no es un programa para
+ ser ejecutado.
+ Sino se trata de una especificación basada en una ontología, que describe
+ la forma en la que un cliente puede interactuar con un servicio.
+ La Figura 2.4
+\shape italic
+ 
+\shape default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sws04"
+
+\end_inset
+
+ detalla la estructura de esta ontología.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/2-4_ontologia_service_model.eps
+	scale 62
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Clases y Propiedades del 
+\shape italic
+Service Model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Parámetros del Proceso y Resultados
+\end_layout
+
+\begin_layout Standard
+Como se describió al presentar el 
+\shape italic
+Service Profile
+\shape default
+, es en el 
+\shape italic
+Service Model
+\shape default
+ donde se definen las instancias para los parámetros de entrada, salida,
+ condiciones previas y resultados.
+ En la Tabla 2.1 se describen estas propiedades, con sus rangos y tipos soportado
+s.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Propiedad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rango
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hasParticipant
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Participant
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hasInput
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hasOutput
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Output
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hasLocal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Local
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameter
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hasPrecondition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Expression
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hasResult
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Result
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Expression
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ResultVar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OutputBinding
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Propiedades del modelo del servicio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Participantes:
+\end_layout
+
+\begin_layout Standard
+Un proceso consiste en dos o más agentes.
+ Uno de éstos y el más importante, es el servidor (
+\shape italic
+TheServer
+\shape default
+).
+ Otro es el cliente (
+\shape italic
+TheClient
+\shape default
+), desde cuyo punto de vista el proceso es descrito.
+ Si hay otros, se añaden mediante la propiedad 
+\shape italic
+hasParticipant
+\shape default
+.
+\end_layout
+
+\begin_layout Paragraph
+Entradas y Salidas:
+\end_layout
+
+\begin_layout Standard
+Las entradas y salidas son subclases de la clase 
+\shape italic
+Parameter
+\shape default
+.
+ Estos parámetros son representados como variables de SWRL (
+\shape italic
+Semantic Web Rule Language
+\shape default
+) y en cada uno se define el tipo de valores que puede instanciar.
+ Especifican la transformación de los datos producidos por el proceso: las
+ entradas especifican la información que el proceso requiere para iniciar
+ la ejecución; y las salidas, especifican la información para cumplir con
+ la ejecución.
+\end_layout
+
+\begin_layout Paragraph
+Condiciones previas y resultado:
+\end_layout
+
+\begin_layout Standard
+Las condiciones previas y el resultado son tratados como expresiones lógicas
+ que funcionan a modo de literales que pueden estar descritos en un lenguaje
+ basado en XML (por ejemplo SWRL) o en otros lenguajes como SPARQL, KIF
+ (
+\shape italic
+Knowledge Interchange Format
+\shape default
+) y DRL (
+\shape italic
+Drools Rule Language
+\shape default
+), entre otros.
+ Pueden existir varias condiciones previas como también resultados.
+\end_layout
+
+\begin_layout Paragraph
+Condiciones de salida y efectos:
+\end_layout
+
+\begin_layout Standard
+Habiendo declarado un resultado, un modelo de proceso se puede describir
+ en términos de cuatro propiedades: 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+inCondition
+\shape default
+, especifica la condición bajo la cual un resultado debe producirse.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+withOutput
+\shape default
+ y 
+\shape italic
+hasEffect
+\shape default
+ indican lo que se produce cuando la condición es verdadera.
+\end_layout
+
+\begin_layout Itemize
+y por último, 
+\shape italic
+hasResultVar
+\shape default
+ declara variables que están acoplados a 
+\shape italic
+inCondition
+\shape default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Tipos de Proceso
+\end_layout
+
+\begin_layout Standard
+Los procesos pueden ser de tres tipos: Atómicos, Simples o Compuestos.
+ En cualquiera de los casos, un proceso puede tener, cualquier número de
+ entradas, salidas, condiciones previas y resultados.
+\end_layout
+
+\begin_layout Paragraph
+Procesos Atómicos y Simples:
+\end_layout
+
+\begin_layout Standard
+Los procesos atómicos son directamente invocables, no tienen subprocesos
+ y se ejecutan en un solo paso.
+ Es decir, un proceso atómico se puede observar como una caja negra a la
+ que llega un mensaje desde el cliente y, tras realizar varias operaciones,
+ devuelve un mensaje.
+ Cada proceso atómico, debe estar siempre relacionado con el 
+\shape italic
+Service Grounding
+\shape default
+ para permitir a un solicitante de servicio la construcción de mensajes
+ en base a sus entradas y resultados.
+\end_layout
+
+\begin_layout Standard
+Por otra parte, los procesos simples no son invocables y no están asociados
+ al 
+\shape italic
+Service Grounding
+\shape default
+.
+ Sin embargo, al igual que los procesos atómicos, son ejecutados en un solo
+ paso.
+ Se utilizan como elementos de abstracción, tanto para proporcionar una
+ visión de algún proceso atómico, como para una representación simplificada
+ de un proceso compuesto.
+\end_layout
+
+\begin_layout Paragraph
+Procesos Compuestos:
+\end_layout
+
+\begin_layout Standard
+Un proceso compuesto tiene la particularidad de poder ser descompuesto en
+ otros procesos, compuestos o atómicos.
+ Esta descomposición del proceso puede adoptar distintas estructuras según
+ cómo se realice la composición.
+ Las principales son:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Sequence
+\series default
+\shape default
+: El proceso se compone de una secuencia de procesos y su ejecución resulta
+ de la ejecución secuencial de todos éstos.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Split
+\series default
+\shape default
+: Consiste en un conjunto de procesos que se deben ejecutar de forma concurrente
+, es decir, al mismo tiempo.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Split-Join
+\series default
+\shape default
+: Añade sincronización al finalizar los procesos de un 
+\shape italic
+Split
+\shape default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Any-Order
+\series default
+\shape default
+: Permite que los procesos se ejecuten en un orden aleatorio.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Choice
+\series default
+\shape default
+: Permite la ejecución de cualquiera de los subprocesos a los que hace referenci
+a.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+If-Then-Else
+\series default
+\shape default
+: Permite la ejecución de forma exclusiva de dos sentencias de tipo 
+\shape italic
+ControlConstruct
+\shape default
+ dependiendo de la veracidad de una condición.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Iterate
+\series default
+\shape default
+: Es una clase abstracta que tiene como subclases 
+\shape italic
+Repeat-While
+\shape default
+ y 
+\shape italic
+Repeat-Until
+\shape default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Repeat-While
+\series default
+\shape default
+: Al igual que la sentencia ya conocida en lenguajes de programación 
+\shape italic
+Repeat-While
+\shape default
+ ejecuta los procesos que contiene mientras se cumpla una condición.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\shape italic
+Repeat-Until
+\series default
+\shape default
+: De forma similar a 
+\shape italic
+Repeat-While
+\shape default
+, esta clase define una iteración que se realiza al menos una vez y hasta
+ que se cumpla una condición.
+\end_layout
+
+\begin_layout Standard
+La transferencia de datos entre procesos, especialmente cuando se trata
+ con procesos compuestos, se formaliza en OWL-S como flujos de datos.
+ De forma similar se plantea la instanciación de parámetros; ya que por
+ convención, un parámetro que es requerido por un proceso se define en el
+ proceso donde es necesario, siguiendo así una política de petición del
+ consumidor.
+\end_layout
+
+\begin_layout Subsection
+Service Grounding
+\end_layout
+
+\begin_layout Standard
+El 
+\shape italic
+Service Grounding
+\shape default
+ especifica detalles de cómo interactuar con el servicio llegando a describir
+ para esto el protocolo que lo implementa, el formato de los mensajes, serializa
+ción, transporte y direccionamiento (máquina y puerto) para ejecutarlo.
+ Es, por tanto, el eslabón clave para completar la descripción semántica
+ de un servicio y establecer la correspondencia con éste.
+ A nivel de ejecución del servicio esta correspondencia se la realiza siempre
+ por cada proceso atómico.
+ 
+\end_layout
+
+\begin_layout Standard
+En el 
+\shape italic
+Service Grounding
+\shape default
+ de un servicio los mensajes intercambiados con dicho servicio se describen
+ en el propio lenguaje de la implementación del servicio.
+ OWL-S no añade ninguna restricción sobre el lenguaje en el que esté implementad
+o el servicio.
+ Sin embargo, sólo adopta WSDL para la descripción de servicios y SOAP como
+ protocolo para el intercambio de mensajes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/2-5_owls-wsdl.eps
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Correspondencia entre OWL-S y WSDL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Relación entre OWL-S y WSDL
+\end_layout
+
+\begin_layout Standard
+Una de las ventajas que existe en la relación entre OWL-S y WSDL, es la
+ correspondencia directa entre sus elementos.
+ Permitiendo al desarrollador, por un lado, tratar con un lenguaje abstracto
+ y muy expresivo para definir su servicio, y por otro, seguir trabajando
+ en un lenguaje ampliamente aceptado como es WSDL.
+\end_layout
+
+\begin_layout Standard
+Ambos lenguajes son necesarios para la especificación completa de un 
+\shape italic
+Service Grounding
+\shape default
+, ya que no cubren el mismo espacio conceptual.
+ Como se observa en la Figura 2.5 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sws04"
+
+\end_inset
+
+, los dos lenguajes superponen perfectamente la descripción de WSDL con
+ la especificación semántica de OWL-S.
+ 
+\end_layout
+
+\begin_layout Standard
+De este modo la correspondencia se da por medio de las operaciones de WSDL
+ con los procesos atómicos del Process Model, y por la relación de los mensajes
+ SOAP con las entradas y salidas basadas en conceptos y propiedades en lógica
+ de descripción.
+\end_layout
+
+\begin_layout Subsubsection
+Servicios Web OWL-S con WSDL y SOAP
+\end_layout
+
+\begin_layout Standard
+Hasta ahora, sólo se ha indicado que existe una relación entre los elementos
+ de OWL-S y WSDL.
+ Queda por establecer el mecanismo por el cual se construyen las correspondencia
+s entre estos elementos.
+ La clase 
+\shape italic
+WsdlGrounding
+\shape default
+, una subclase de la ontología Grounding, sirve para este propósito.
+ Cada instancia 
+\shape italic
+WsdlGrounding
+\shape default
+, a su vez, contiene una lista de instancias 
+\shape italic
+WsdlAtomicProcessGrounding
+\shape default
+, que representan a cada uno de los procesos atómicos.
+\end_layout
+
+\begin_layout Standard
+Las propiedades de 
+\shape italic
+WsdlAtomicProcessGrounding
+\shape default
+ se refieren a elementos específicos dentro de la descripción WSDL.
+ Estos son:
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wsdlVersion
+\shape default
+: URI que indica la versión de WSDL en uso.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wsdlDocument
+\shape default
+: URI del documento WSDL a la que el Grounding se refiere.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wsdlOperation
+\shape default
+: URI de la operación WSDL correspondiente a un proceso atómico dado.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wsdlPort
+\shape default
+: Representa el puerto de un servicio WSDL, ofrecido por una operación dada.
+ Tener en cuenta que el valor de 
+\shape italic
+wsdlOperation
+\shape default
+ puede o no especificar el puerto WSDL con el que se desee interactuar.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wsdlInputMessage
+\shape default
+: Contiene la URI de la definición del mensaje WSDL qué transporta las entradas
+ de un proceso atómico.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wsdlOutputMessage
+\shape default
+: Similar a 
+\shape italic
+wsdlInputMessage
+\shape default
+, pero para las salidas.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wsdlInput
+\shape default
+: Contiene un par de objetos.
+ Por una parte, la entrada de WSDL, y de la otra, la entrada de OWL-S.
+ Ambos en sus respectivos tipos.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wsdlOutput
+\shape default
+: Similar a 
+\shape italic
+wsdlInput
+\shape default
+, pero, para un par de instancias de las salidas.
+ 
+\end_layout
+
+\begin_layout Section
+Modificación de OWL-S para soporte con REST y composición de servicios
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+No se aún donde pero se debe añadir las definiciones de WSDL y WADL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se menciona anteriormente, la especificación de OWL-S fue creada y
+ es exclusivamente empleada para dar soporte a implementaciones de servicios
+ Web basados en SOAP como protocolo de comunicación de mensajes y WSDL como
+ descriptor de servicios.
+ Es así, que como aporte de este trabajo, se pretende añadir el soporte
+ a servicios Web basados en REST y con descripción en formato WADL.
+\end_layout
+
+\begin_layout Standard
+Por otra parte, es también importante definir la semántica de la composición
+ de servicios, ya que la ontología OWLS sólo se limita a definir las estructuras
+ de control utilizadas dentro de un proceso de negocio, y no especifica
+ así, las invocaciones a servicios y los parámetros utilizados.
+\end_layout
+
+\begin_layout Standard
+Para cumplir con estos dos propósitos mencionados, en las secciones anteriores,
+ se realizó una revisión minuciosa de las ontologías de OWL-S.
+ Y desde ese análisis, se pudo observar que de los tres enfoques de OWL-S,
+ dos deberían ser modificados: el 
+\shape italic
+Service Grounding
+\shape default
+, para que OWL-S soporte servicios basados en REST; y el 
+\shape italic
+Service Model
+\shape default
+, para introducir la semántica de la composición de servicios.
+ 
+\end_layout
+
+\begin_layout Standard
+Para realizar las modificaciones a estas ontologías se utiliza Protégè 3.4.6
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Protége: Editor de ontologías y sistema de adquisición de conocimiento.
+ URL: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://protege.stanford.edu"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Modificación de la Ontología Service Grounding
+\end_layout
+
+\begin_layout Standard
+La Figura 2.6 describe la nueva relación que existirá entre OWL-S con WSDL
+ y WADL.
+ Como se observa, la relación de correspondencia se da a través de dos caminos:
+ 
+\end_layout
+
+\begin_layout Itemize
+Por un lado, cada proceso atómico, al igual que en WSDL, en WADL representa
+ a una operación determinada.
+ Sólo que en éste último, una operación se asocia explícitamente a un método
+ HTTP (GET, POST, PUT o DELETE).
+ 
+\end_layout
+
+\begin_layout Itemize
+Y por otro, las entradas y salidas que en WSDL representan mensajes; ahora
+ en WADL, serán solicitudes y respuestas de recursos en formato XML y JSON
+ que serán transferidas a través de HTTP.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/2-6_owls-wadl.eps
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Correspondencia entre OWL-S y WSDL/WADL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para añadir la especificación WADL a la ontología del 
+\shape italic
+Service Grounding
+\shape default
+, se tuvo que crear como subclase de Grounding, la clase wadlAtomic.
+ Ésta junto con sus propiedades representa la definición de la descripción
+ semántica de los servicios Web basados en REST.
+ Para una mejor aclaración y en base a la Figura 2.7, a continuación se describen
+ cada una de las propiedades de la nueva clase wadlAtomic.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/2-7_modificacion-owls-grounding.eps
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Modificación de la ontología Grounding
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wadlDocument
+\shape default
+: URI del documento WADL a la que el Grounding se refiere.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wadlGrammarsInclude
+\shape default
+: Esta propiedad actúa como un contenedor para las definiciones del formato
+ de los datos intercambiados durante la ejecución del protocolo descrito
+ por el documento WADL
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wadlMethodName
+\shape default
+: Se refiere al nombre del método HTTP (GET, POST, PUT o DELETE).
+ Es importante indicar que un servicio en REST como máximo, sólo puede contener
+ cuatro tipos de métodos, uno por cada método HTTP.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wadlResourcesBase
+\shape default
+: Es la URI base que contiene los recursos.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wadlResourcePath
+\shape default
+: Es opcional, y si está presente, proporciona una URI relativa para identificar
+ el recurso.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wadlOperation
+\shape default
+: URI de la operación WADL correspondiente a un proceso atómico.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+wadlVersion
+\shape default
+: Representa la versión de WADL.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+owlsProcess
+\shape default
+: Es la propiedad que se relaciona con la ontología del Service Process,
+ más explicitamente con la clase AtomicProcess, para describir la funcionalidad
+ del Proceso.
+\end_layout
+
+\begin_layout Subsection
+Modificación de la Ontología Service Model
+\end_layout
+
+\begin_layout Standard
+Para que se pueda definir la composición de servicios semánticamente se
+ llegaron a definir las clases y propiedades siguientes:
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+components
+\shape default
+: Define los procesos por el cuál están compuestos las estructuras de control.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+ServiceExecution
+\shape default
+: Es la clase que define la invocación a servicios, en ella se definen propiedad
+es como: 
+\shape italic
+order
+\shape default
+, 
+\shape italic
+implement
+\shape default
+, 
+\shape italic
+inputServiceExecution
+\shape default
+ y 
+\shape italic
+outputServiceExecution
+\shape default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+order
+\shape default
+: Define el orden en el que se ejecutan las estructuras de control o la
+ invocación a servicios.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+implement
+\shape default
+: Hace referencia al servicio que será invocado.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+inputServiceExecution
+\shape default
+: Describe los parámetros de entrada que son utilizados para invocar al
+ servicio.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+outputServiceExecution
+\shape default
+: Describe los parámetros de salida que son obtenidos de la ejecución del
+ servicio.
+\end_layout
+
+\begin_layout Standard
+La Figura 2.8 detalla los cambios realizados a la ontología del 
+\shape italic
+Service Model
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/2-8_modificacion-owls-process.eps
+	scale 78
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Modificación de la Ontología Process
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+Dada una infraestructura de SWS, se vio por conveniente utilizar el framework
+ OWL-S para definir la semántica de los servicios Web.
+ Sin embargo, a pesar de los beneficios de OWL-S para con los SWS, se pudo
+ observar que este estándar sólo tiene soporte para servicios Web basados
+ en SOAP, lo que deja de lado a otras tecnologías actualmente muy utilizadas
+ como REST.
+ 
+\end_layout
+
+\begin_layout Standard
+Por esta razón, en este capítulo se propuso la modificación a la ontología
+ 
+\shape italic
+Service Grounding
+\shape default
+ de OWL-S, añadiendo clases y propiedades, propias de REST.
+ Con este fin, se logra obtener una infraestructura heterogénea que sea
+ capaz de soportar distintas tecnologías y rompa las barreras y restricciones
+ creadas por los protocolos y estándares actuales.
+\end_layout
+
+\begin_layout Standard
+Además de la modificación del 
+\shape italic
+Service Grounding
+\shape default
+, se propone también la modificación al 
+\shape italic
+Service Model
+\shape default
+ para añadir la semántica de la composición de servicios a la ontología.
+ Logrando de este modo que los servicios puedan ser compuestos semánticamente
+ y en base a tecnologías diferentes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Y por último, las características del servicio, que son propiedades que
+ se emplean por ejemplo; para categorizar el servicio de acuerdo a estándares
+ de clasificación como el UNSPSC; para determinar la calidad del servicio,
+ ya que algunos servicios puede ser muy buenos, confiables o rápidos, mientras
+ que otros pueden ser no fiables, lentos, o incluso maliciosos; y para una
+ lista ilimitada de parámetros de servicio que pueden contener cualquier
+ tipo de información, como por ejemplo el tiempo de respuesta máximo o a
+ la disponibilidad geográfica de un servicio.
+\end_layout
+
+\begin_layout Plain Layout
+Un proceso puede tener cualquier número de entradas (incluyendo el cero),
+ en representación de la información, es decir, bajo ciertas condiciones,
+ necesarias para el desempeño del proceso.
+ Puede tener cualquier número de salidas, la información que proporciona
+ el proceso para el solicitante.
+ Puede haber cualquier número de condiciones previas, que todos deben tener
+ para que el proceso para ser válidamente invocada.
+ Finalmente, el proceso puede tener cualquier número de efectos.
+ Resultados y los efectos pueden depender de las condiciones que mantienen
+ fiel del estado del mundo en el momento se lleva a cabo el proceso.
+ (Utilizamos el término realizar en lugar de ejecutar a restar importancia
+ a la imagen tradicional de un único agente responsable de la ocurrencia
+ del proceso.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch NoChildDocument
+status open
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bibliografia"
+options "unsrt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "custom"
+width "2.5cm"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

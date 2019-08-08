@@ -1,0 +1,461 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrbook
+\begin_preamble
+% increase link area for cross-references and autoname them
+\AtBeginDocument{\renewcommand{\ref}[1]{\mbox{\autoref{#1}}}}
+\newlength{\abc}
+\settowidth{\abc}{\space}
+\AtBeginDocument{%
+\addto\extrasenglish{
+ \renewcommand{\equationautorefname}{\hspace{-\abc}}
+ \renewcommand{\sectionautorefname}{sec.\negthinspace}
+ \renewcommand{\subsectionautorefname}{sec.\negthinspace}
+ \renewcommand{\subsubsectionautorefname}{sec.\negthinspace}
+ \renewcommand{\figureautorefname}{Fig.\negthinspace}
+ \renewcommand{\tableautorefname}{Tab.\negthinspace}
+}
+}
+
+% in case somebody want to have the label "Gleichung"
+%\renewcommand{\eqref}[1]{Gleichung~(\negthinspace\autoref{#1})}
+
+% put the link to figure floats to the beginning
+% of the figure and not to its end
+\usepackage[figure]{hypcap}
+
+% the pages of the TOC is numbered roman
+% and a pdf-bookmark for the TOC is added
+\let\myTOC\tableofcontents
+\renewcommand\tableofcontents{%
+  \frontmatter
+  \pdfbookmark[1]{\contentsname}{}
+  \myTOC
+  \mainmatter }
+
+% make caption labels bold
+\setkomafont{captionlabel}{\bfseries}
+\setcapindent{1em}
+
+% enable calculations
+\usepackage{calc}
+
+% fancy page header/footer settings
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+
+% increase the bottom float placement fraction
+\renewcommand{\bottomfraction}{0.5}
+
+% avoid that floats are placed above its sections
+\let\mySection\section\renewcommand{\section}{\suppressfloats[t]\mySection}
+\end_preamble
+\options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage,fleqn
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans lmss
+\font_typewriter lmtt
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_title "Implementación de Servicios Web Semánticos para Arquitecturas SOA"
+\pdf_author "Lucio Marcelo Quispe"
+\pdf_subject "Tesis para la obtención del grado de Máster en Tecnologías Informáticas"
+\pdf_keywords "Servicios Web, Arquitectura SOA, Web Semántica, SOAP, REST, Ontologías"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch NoChildDocument
+\selected 0
+\filename_suffix 0
+\color #ff0000
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rightmark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Conclusiones
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Enable page headers and add the chapter to the header line.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Footer
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+
+\end_layout
+
+\begin_layout Chapter*
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Conclusiones} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las conclusiones finales del trabajo de investigación se abordan en función
+ a las siguientes características:
+\end_layout
+
+\begin_layout Standard
+De SOA y sus componentes:
+\end_layout
+
+\begin_layout Itemize
+Se puede afirmar que los servicios Web aumentan la interoperabilidad de
+ las aplicaciones en la red.
+ Y junto con tecnologías y estándares de SOA nos permiten obtener sistemas
+ altamente escalables.
+ 
+\end_layout
+
+\begin_layout Itemize
+Sin embargo, aún con estas ventajas, no se logran satisfacer necesidades
+ actuales de un ambiente SOA.
+ Carencias como un registro sintáctico, soporte restringido al protocolo
+ SOAP y una composición de servicios poco transparente; reducen el potencial
+ de una arquitectura SOA.
+\end_layout
+
+\begin_layout Standard
+De los Servicios Web Semánticos:
+\end_layout
+
+\begin_layout Itemize
+La Web semántica nos permitió dotar de mayor información a los servicios
+ Web, con lo cuál se logró que los procesos desarrollados dentro de una
+ infraestructura SOA sean más eficientes, permitiendo a usuarios y maquinas,
+ buscar y relacionar información de una forma automática y directa.
+\end_layout
+
+\begin_layout Itemize
+Se pudo observar que las consultas e inferencias realizadas sobre las ontologías
+ nos permiten obtener, en función a las relaciones y restricciones de sus
+ objetos y propiedades, mejores resultados en comparación a un registro
+ sintáctico.
+\end_layout
+
+\begin_layout Standard
+Del estándar OWL-S:
+\end_layout
+
+\begin_layout Itemize
+Aunque fue pensado para SWS, dado el estudio realizado, se observó que este
+ estándar no cubre las expectativas propuestas en los objetivos de este
+ trabajo, debido a que sólo soporta la definición de servicios basados en
+ SOAP y no describe claramente el proceso de composición de servicios.
+\end_layout
+
+\begin_layout Itemize
+Por estas razones, se tuvo que modificar la estructura de OWL-S, añadiéndose
+ clases y propiedades a las ontologías Service Grounding y Service Model,
+ para dar soporte a servicios basados en REST y además, se defina claramente
+ el proceso de composición.
+\end_layout
+
+\begin_layout Itemize
+De este modo, se logra obtener una infraestructura heterogénea que sea capaz
+ de soportar distintas tecnologías y permita que los procesos realizados
+ por SOA sean mucho más productivos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De los prototipos propuestos:
+\end_layout
+
+\begin_layout Itemize
+En este trabajo se proponen cuatro prototipos semánticos que permiten realizar
+ procesos de publicación, descubrimiento, localización y composición de
+ servicios a través de un registro semántico.
+ 
+\end_layout
+
+\begin_layout Itemize
+Estos prototipos implementan métodos que tienen las mismas funcionalidades
+ de un registro UDDI y de los procesos SOA.
+ Aunque no satisfacen un estándar, como UDDI, con éstos se logra obtener,
+ información más detallada y consultas más precisas.
+ Todo en función a un registro heterogéneo, que soporta a la vez, el manejo
+ de servicios basados en SOAP y REST.
+\end_layout
+
+\begin_layout Itemize
+Y lo más importante, estos cuatro prototipos nos permiten cumplir con los
+ objetivos trazados al inicio de la investigación.
+ Con 
+\shape italic
+Publisher
+\shape default
+ realizamos la publicación de servicios Web y proveedores, de acuerdo a
+ una semántica definida.
+ 
+\shape italic
+Discovery
+\shape default
+ proporciona las funcionalidades para que estos servicios publicados puedan
+ ser descubiertos.
+ 
+\shape italic
+Locator
+\shape default
+ nos permite ubicar la referencia de un servicio, a través de sus característica
+s, para que pueda ser utilizado inmediatamente.
+ Y 
+\shape italic
+Composer
+\shape default
+ nos permite realizar la composición semántica de servicios, haciendo de
+ éste un proceso semiautomático y transparente para el usuario.
+\end_layout
+
+\begin_layout Standard
+En resumen, se puede indicar que los objetivos trazados en este trabajo
+ y que la problemática de los SWS en una arquitectura SOA han sido alcanzados
+ satisfactoriamente.
+ Sin embargo, al ser este un campo de investigación, queda mucho más por
+ realizar, debido a que SOA, sus componentes y tecnología se encuentran
+ en constante evolución.
+\end_layout
+
+\begin_layout Chapter*
+Líneas Futuras
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Líneas Futuras} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir del desarrollo y resultados de la investigación realizada, es posible:
+\end_layout
+
+\begin_layout Itemize
+Desarrollar un prototipo para la monitorización de servicios Web que permita,
+ en función a la monitorización, añadir o modificar el registro semántico.
+ Donde por ejemplo, se pueda establecer que este prototipo gestione la informaci
+ón de las características de un servicio, tales como la disponibilidad o
+ tiempo de respuesta, midiendo de este modo el porcentaje de disponibilidad
+ o tiempo de respuesta del mismo.
+\end_layout
+
+\begin_layout Itemize
+Añadir a la ontología Service Model la semántica necesaria para que la composici
+ón se la realice de dos distintas formas.
+ Por orquestación, que describe qué un proceso puede interactuar con otros
+ servicios y el flujo estar controlado por un coordinador central.
+ Y por coreografía, en la que cada servicio tiene su propia tarea en la
+ composición total y no existe un coordinador central.
+\end_layout
+
+\begin_layout Itemize
+Y para finalizar, se propone incorporar componentes y mecanismos de seguridad,
+ como WS-Security, HTTPS y otros, con el propósito de optimizar la infraestructu
+ra de SWS propuesta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch NoChildDocument
+status collapsed
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "thesisExample"
+options "alpha"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "custom"
+width "2.5cm"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

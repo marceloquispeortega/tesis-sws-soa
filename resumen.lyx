@@ -1,0 +1,168 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrbook
+\begin_preamble
+% enable calculations
+\usepackage{calc}
+
+% increase the bottom float placement fraction
+\renewcommand{\bottomfraction}{0.5}
+\end_preamble
+\options intoc,bibliography=totoc,index=totoc,BCOR10mm,captions=tableheading,titlepage,fleqn
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans lmss
+\font_typewriter lmtt
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_title "Abstract"
+\pdf_author "Uwe Stöhr"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 2
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize a4paper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Resumen
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Resumen} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+adds table of contents entry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+SOA es un concepto de arquitectura de software que establece un marco de
+ diseño para la integración de aplicaciones independientes, de manera que
+ puedan accederse a sus funcionalidades desde la red.
+ 
+\end_layout
+
+\begin_layout Standard
+La forma más habitual de crear un ambiente SOA es mediante el uso de los
+ servicios Web, una tecnología independiente de la plataforma, que junto
+ con estándares, como HTTP, SOAP, WSDL, UDDI y BPEL; permiten cumplir con
+ procesos como la publicación, el descubrimiento y la composición de aplicacione
+s dentro de un conjunto de servicios.
+ 
+\end_layout
+
+\begin_layout Standard
+Sin embargo, al momento de implementar una arquitectura SOA, se presentan
+ algunas dificultades en estos procesos.
+ Ya que por su naturaleza sintáctica tienden a ser ineficientes, con poca
+ información y hasta imprecisos en sus resultados.
+ Otra desventaja es que SOA como tal se restringe a utilizar servicios Web
+ basados en SOAP, dejando de lado otras tecnologías emergentes como REST.
+ 
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, a fin de cubrir las carencias observadas, este trabajo propone
+ mejorar los procesos realizados en SOA, en base a la modificación de la
+ estructura de las ontologías del estándar OWL-S, para que los servicios
+ Web basados en SOAP y REST sean definidos semánticamente en un registro
+ UDDI.
+ Formando así un ambiente SOA heterogéneo, que realice los procesos de publicaci
+ón, descubrimiento, localización y composición de servicios tomando en cuenta
+ diferentes tecnologías.
+ 
+\end_layout
+
+\begin_layout Standard
+En cuanto a la estructura del trabajo, éste se divide en 3 capítulos.
+ El primero cubre aspectos como los antecedentes, objetivos y la revisión
+ al estado de arte.
+ En el siguiente, se propone la implementación de servicios Web semánticos,
+ abarcando una infraestructura, el modelado semántico con OWL-S y las modificaci
+ones propuestas a las ontologías para el soporte con REST y la composición
+ semántica.
+ En el tercero, se proponen los prototipos para la publicación, descubrimiento,
+ localización y composición de servicios más algunas pruebas de uso de los
+ mismos.
+ Y para finalizar, se abordan las conclusiones y líneas futuras de investigación.
+ 
+\end_layout
+
+\end_body
+\end_document
